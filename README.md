@@ -9,7 +9,7 @@
 
 ## 📌 Sobre Mim
 
-Sou estudante de **Ciência da Computação** (Braz Cubas) e **Matemática** (IFSP), com formação técnica como Tecnóloga em **Análise e Desenvolvimento de Sistemas** (Fatec Mogi das Cruzes). 
+Sou estudante de **Ciência da Computação** (Braz Cubas) e **Matemática** (IFSP). 
 
 Atuo com foco em solução de problemas complexos de dados, aliando visão de negócio, modelagem estatística, engenharia de requisitos e governança. Possuo artigo científico publicado sobre segurança de bancos de dados em nuvem e experiência prática no desenvolvimento de pipelines de extração (ETL/Web Scraping), modelagem dimensional e dashboards estratégicos em Power BI e Looker Studio.
 
@@ -46,7 +46,7 @@ Atuo com foco em solução de problemas complexos de dados, aliando visão de ne
 
 * **Bacharelado em Ciência da Computação** — Centro Universitário Braz Cubas *(Previsão: 2029)*
 * **Graduação em Matemática** — Instituto Federal de São Paulo (IFSP) *(Previsão: 2028)*
-* **Tecnólogo em Análise e Desenvolvimento de Sistemas** — Fatec Mogi das Cruzes *(Concluído: 2024)*
+* **Tecnólogo em Análise e Desenvolvimento de Sistemas** — Fatec Mogi das Cruzes *(Incompleto 2024)*
 
 ---
 

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ieda Oliveira | Analista de Dados, BI & Analytics</title>
+  <style>
+    :root {
+      --bg: #ffffff;             /* Branco */
+      --card-bg: #fdd3b4;        /* Bege / Pêssego Claro */
+      --text: #525252;           /* Cinza Escuro */
+      --text-muted: #525252;     /* Cinza para descrições */
+      --accent: #e85a82;         /* Rosa / Coral (Destaque Principal) */
+      --accent-hover: #c44368;   /* Rosa Escuro (Hover) */
+      --secondary: #0b5c97;      /* Azul Petróleo (Destaque Secundário) */
+      --border: #e0b090;         /* Tom suave para bordas */
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 0 20px; }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 0; }
+    
+    header { display: flex; align-items: center; gap: 24px; margin-bottom: 48px; }
+    .avatar-img { 
+      width: 195px; 
+      height: 195px; 
+      border-radius: 50%; 
+      object-fit: cover; 
+      border: 3px solid var(--secondary); 
+      flex-shrink: 0; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .hero-info h1 { font-size: 2rem; color: var(--secondary); }
+    .hero-info h2 { font-size: 1.1rem; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+    .hero-info p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px; }
+    
+    .btn-group { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; transition: 0.2s; }
+    .btn-primary { background: var(--accent); color: #ffffff; }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-secondary { background: var(--card-bg); color: var(--secondary); border: 1px solid var(--border); }
+    .btn-secondary:hover { border-color: var(--secondary); background: #fbc29a; }
+
+    section { margin-bottom: 48px; }
+    section h3 { font-size: 1.3rem; margin-bottom: 20px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; color: var(--secondary); }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+    .skill-card { background: var(--card-bg); padding: 16px; border-radius: 8px; border: 1px solid var(--border); }
+    .skill-card h4 { color: var(--secondary); font-size: 1rem; margin-bottom: 8px; }
+    .skill-card ul { list-style: none; color: var(--text); font-size: 0.9rem; }
+    .skill-card li { margin-bottom: 6px; }
+
+    .projects-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+    .project-card { background: var(--card-bg); border-radius: 8px; border: 1px solid var(--border); overflow: hidden; }
+    .project-content { padding: 20px; }
+    .project-content h4 { font-size: 1.15rem; color: var(--secondary); margin-bottom: 8px; }
+    .project-content p { color: var(--text); font-size: 0.92rem; margin-bottom: 16px; }
+    .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+    .tag { background: var(--secondary); color: #ffffff; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+
+    .timeline { display: flex; flex-direction: column; gap: 16px; }
+    .timeline-item { background: var(--card-bg); padding: 16px; border-radius: 8px; border-left: 4px solid var(--accent); }
+    .timeline-item h4 { font-size: 1rem; color: var(--secondary); }
+    .timeline-item .meta { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+    .timeline-item p { font-size: 0.9rem; color: var(--text); }
+
+    footer { text-align: center; padding: 24px 0; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <header>
+      <img src="https://avatars.githubusercontent.com/u/61597704?v=4" alt="Foto de Ieda Oliveira" class="avatar-img">
+      <div class="hero-info">
+        <h1>Ieda Oliveira</h1>
+        <h2>Analista de Dados & BI | Ciência de Dados & Governança</h2>
+        <p>Transformo dados públicos e operacionais não estruturados em pipelines automatizados de ETL, bancos de dados relacionais e dashboards de alto impacto decisório.</p>
+        <div class="btn-group">
+          <a href="#" class="btn btn-primary">Baixar Currículo (PDF)</a>
+          <a href="https://linkedin.com/in/ieda-oliveira" target="_blank" class="btn btn-secondary">LinkedIn</a>
+          <a href="https://github.com/iedahirari" target="_blank" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h3>Habilidades Técnicas em Dados</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Engenharia de Dados & SQL</h4>
+          <ul>
+            <li>SQL Avançado (Joins, Subqueries, Normalização)</li>
+            <li>ETL, Web Scraping / Crawling & PDF Parsing</li>
+            <li>Modelagem Relacional e Dimensional (MySQL/MariaDB)</li>
+            <li>Engenharia de Requisitos & Governança de Dados</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Análise, Python & Estatística</h4>
+          <ul>
+            <li>Python para Dados (Pandas, NumPy, Seaborn)</li>
+            <li>Análise Exploratória de Dados (EDA)</li>
+            <li>Estatística Descritiva & Matrizes de Correlação</li>
+            <li>C/C++, Java e Algoritmos</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Business Intelligence & Storytelling</h4>
+          <ul>
+            <li>Power BI (DAX Avançado, Power Query, Star Schema)</li>
+            <li>Looker Studio & Dashboards Interativos</li>
+            <li>Storytelling com Dados & Boas Práticas de DataViz</li>
+            <li>Gestão de KPIs, Métricas Comerciais & Custos Operacionais</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Projetos de Dados, Analytics & Pesquisa</h3>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-content">
+            <h4>MONITORAÊ: Como extrair dados não estruturados em PDFs governamentais e criar transparência orçamentária para a população?</h4>
+            <p>Plataforma web completa de transparência pública para Mogi das Cruzes embasada na Lei de Acesso à Informação (LAI). Envolveu engenharia de requisitos, automação de pipeline ETL (Web Scraping e parsing de PDFs da folha de pagamento e câmara municipal), modelagem de banco de dados relacional MySQL e entrega de dashboards analíticos de remuneração, gastos e verbas parlamentares.</p>
+            <div class="tags">
+              <span class="tag">SQL</span>
+              <span class="tag">ETL & Web Scraping</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">PDF Parsing</span>
+              <span class="tag">Engenharia de Requisitos</span>
+              <span class="tag">Dashboards</span>
+            </div>
+            <div class="btn-group">
+              <a href="https://github.com/iedahirari/Projeto-de-Engenharia-de-Software-2---ES2" target="_blank" class="btn btn-primary">Ver Repositório & Documentação (GitHub)</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <h4>Como diagnosticar o desempenho comercial, padrões de compra e gargalos logísticos em um e-commerce?</h4>
+            <p>Análise end-to-end sobre a base transacional do e-commerce brasileiro (Olist). Combina tratamento estatístico e EDA em Python (Pandas/Seaborn) com a construção de um dashboard no Power BI sob modelagem Star Schema e fórmulas DAX para monitorar faturamento, ticket médio, sazonalidade e SLA de entregas por estado.</p>
+            <div class="tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Star Schema</span>
+              <span class="tag">EDA</span>
+            </div>
+            <div class="btn-group">
+              <a href="https://github.com/iedahirari/dashboard-ecommerce-olist" target="_blank" class="btn btn-primary">Ver Código & Projeto (GitHub)</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-content">
+            <h4>Como selecionar o modelo ideal de controle de acesso para garantir a integridade e segurança de bancos de dados na nuvem?</h4>
+            <p>Artigo científico publicado na <strong>Revista EduFatec</strong>. Estudo comparativo minucioso entre os modelos de controle de acesso Discricionário (DAC), Obrigatório (MAC) e Baseado em Papéis (RBAC). A pesquisa investigou 16 trabalhos acadêmicos nas bases IEEE, ACM e Google Acadêmico, avaliando requisitos de integridade, disponibilidade, autenticidade e gestão de risco em ambientes de dados em nuvem.</p>
+            <div class="tags">
+              <span class="tag">Bancos de Dados</span>
+              <span class="tag">Governança & Nuvem</span>
+              <span class="tag">DAC / MAC / RBAC</span>
+              <span class="tag">Segurança de Dados</span>
+              <span class="tag">Redação Científica</span>
+            </div>
+            <div class="btn-group">
+              <a href="https://revistaedufatec.fatecfranca.edu.br/wp-content/uploads/2024/04/edufatec-n06v2a07.pdf" target="_blank" class="btn btn-primary">Ler Artigo Completo (PDF)</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h3>Trajetória Profissional Orientada a Dados</h3>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <h4>Gerente Comercial & Operacional — Lua Luana (Suzano, SP)</h4>
+          <div class="meta">Junho de 2020 – Atual</div>
+          <p>Análise diária de KPIs operacionais, acompanhamento de giro de estoque e métricas de fluxo de vendas. Elaboração de relatórios gerenciais consolidados (GSheets/Excel) para embasamento de tomadas de decisão estratégicas e identificação de causa-raiz em perdas de inventário.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Suporte Administrativo & Gestão de Dados — Odonto Pride (Suzano, SP)</h4>
+          <div class="meta">Novembro de 2018 – Fevereiro de 2019</div>
+          <p>Operação de sistema de agendamentos em saúde e higienização/manutenção de banco de prontuários de pacientes, assegurando estrito controle de qualidade, padronização e confidencialidade dos dados.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Operadora de Análise de Crédito & Cobrança — Rede de Cobranças Bandeirantes (São Paulo, SP)</h4>
+          <div class="meta">Outubro de 2013 – Abril de 2015</div>
+          <p>Análise exploratória de carteiras de inadimplência, avaliação de diagnóstico financeiro e modelagem de abordagens estratégicas para alcance de metas operacionais.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h3>Formação Acadêmica em Exatas & Computação</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Ciência da Computação</h4>
+          <p style="color: var(--text); font-size: 0.9rem;">Centro Universitário Braz Cubas</p>
+          <p style="color: var(--accent); font-size: 0.85rem; font-weight: 600;">Conclusão prevista: Jun/2029</p>
+        </div>
+        <div class="skill-card">
+          <h4>Matemática</h4>
+          <p style="color: var(--text); font-size: 0.9rem;">Instituto Federal de São Paulo (IFSP)</p>
+          <p style="color: var(--accent); font-size: 0.85rem; font-weight: 600;">Conclusão prevista: Dez/2028</p>
+        </div>
+        <div class="skill-card">
+          <h4>Análise e Desenvolvimento de Sistemas</h4>
+          <p style="color: var(--text); font-size: 0.9rem;">Fatec Mogi das Cruzes</p>
+          <p style="color: var(--accent); font-size: 0.85rem; font-weight: 600;">Concluído (2019–2024)</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Vamos Conversar?</h3>
+      <p style="color: var(--text-muted); margin-bottom: 16px;">
+        Disponível para oportunidades em Análise de Dados, Business Intelligence, Ciência de Dados e Engenharia/Governança de Dados.
+      </p>
+      <div class="btn-group">
+        <a href="mailto:iedahirari@gmail.com" class="btn btn-primary">Enviar E-mail (iedahirari@gmail.com)</a>
+        <a href="https://linkedin.com/in/ieda-oliveira" target="_blank" class="btn btn-primary">Conectar no LinkedIn</a>
+        <a href="https://wa.me/5511930122714?text=Ol%C3%A1%2C%20Ieda!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" class="btn btn-primary">Falar no WhatsApp</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Ieda Oliveira | Portfólio de Dados & Analytics</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
