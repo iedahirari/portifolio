@@ -1,0 +1,74 @@
+/* Currículo: uma coluna, texto real (legível por sistemas de recrutamento), A4 na impressão */
+
+:root {
+	--texto: #2e2129;
+	--texto-suave: #5f4b57;
+	--titulo: #5a1c3d;
+	--rosa: #b02a61;
+	--rosa-claro: #f8d5e2;
+	--borda: #ecd3dd;
+	--fundo: #f6eef1;
+	--fonte: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	--fonte-titulo: "DM Serif Display", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font-family: var(--fonte); font-size: 10.5pt; line-height: 1.45; }
+a { color: var(--rosa); }
+
+.barra {
+	position: sticky; top: 0; z-index: 10;
+	display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
+	padding: 12px 20px; background: #fff; border-bottom: 1px solid var(--borda);
+	font-size: 14px;
+}
+.barra-acoes { display: flex; flex-wrap: wrap; gap: 8px; }
+.barra a, .barra button {
+	display: inline-flex; align-items: center; gap: 6px;
+	padding: 8px 14px; border-radius: 999px; border: 1.5px solid var(--borda);
+	background: #fff; color: var(--titulo); font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+}
+.barra .principal { background: var(--rosa); border-color: var(--rosa); color: #fff; }
+.barra a:hover, .barra button:hover { border-color: var(--rosa); }
+.barra p { margin: 0; color: var(--texto-suave); font-size: 13px; }
+
+.folha {
+	width: 210mm; max-width: calc(100% - 24px); min-height: 297mm;
+	margin: 24px auto; padding: 16mm 17mm; background: #fff;
+	box-shadow: 0 10px 40px rgba(90, 28, 61, .12); border-radius: 4px;
+}
+@media (max-width: 640px) { .folha { padding: 22px 18px; min-height: 0; } }
+
+header.cv { border-bottom: 2px solid var(--rosa); padding-bottom: 10px; margin-bottom: 4px; }
+.cv h1 { font-family: var(--fonte-titulo); font-weight: 400; color: var(--titulo); font-size: 26pt; line-height: 1; margin: 0 0 4px; }
+.cv .cargo { font-weight: 600; color: var(--rosa); font-size: 12pt; margin: 0 0 6px; }
+.cv .contatos { margin: 0; color: var(--texto-suave); font-size: 9.5pt; }
+.cv .contatos a { color: inherit; text-decoration: none; }
+.cv .contatos span + span::before { content: " · "; color: var(--rosa); }
+
+.cv h2 {
+	break-after: avoid; page-break-after: avoid;
+	font-size: 10pt; letter-spacing: .12em; text-transform: uppercase; color: var(--titulo);
+	border-bottom: 1px solid var(--borda); padding-bottom: 3px; margin: 14px 0 7px;
+}
+.cv p { margin: 0 0 6px; }
+.cv ul { margin: 2px 0 0; padding-left: 16px; }
+.cv li { margin-bottom: 2px; }
+
+.item { margin-bottom: 9px; break-inside: avoid; }
+.item-topo { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.item-topo strong { color: var(--titulo); }
+.item-topo .data { color: var(--texto-suave); font-size: 9.5pt; white-space: nowrap; }
+.item .sub { color: var(--texto-suave); font-size: 9.5pt; }
+
+.habilidades { display: grid; grid-template-columns: max-content 1fr; gap: 3px 14px; margin: 0; }
+.habilidades dt { font-weight: 700; color: var(--titulo); }
+.habilidades dd { margin: 0; }
+
+@media print {
+	@page { size: A4; margin: 12mm 14mm; }
+	body { background: #fff; font-size: 10pt; }
+	.barra { display: none; }
+	.folha { width: auto; max-width: none; min-height: 0; margin: 0; padding: 0; box-shadow: none; }
+	a { text-decoration: none; }
+}
