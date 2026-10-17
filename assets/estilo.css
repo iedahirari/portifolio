@@ -213,6 +213,7 @@ h3 { font-size: 1.15rem; }
 .lista-simples { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
 .lista-simples strong { display: block; color: var(--titulo); line-height: 1.35; }
 .lista-simples span { color: var(--texto-suave); font-size: .92rem; }
+.lista-simples span + span { display: block; margin-top: 4px; }
 
 /* Contato */
 #contato { padding-top: 16px; }

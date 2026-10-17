@@ -21,7 +21,7 @@
 	<link rel="icon" href="assets/icone.svg" type="image/svg+xml">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap">
 	<link rel="stylesheet" href="assets/estilo.css">
 	<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ieda Oliveira","url":"https://iedahirari.github.io/portifolio/","image":"https://avatars.githubusercontent.com/u/61597704?v=4","jobTitle":"Análise de Dados & BI","email":"mailto:iedahirari@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Suzano","addressRegion":"SP","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/in/ieda-oliveira/","https://github.com/iedahirari"],"knowsAbout":["Python","SQL","Power BI","Data Analysis","Business Intelligence","pandas"]}</script>
 </head>
@@ -110,8 +110,8 @@
 						<div class="projeto-selos"><span class="chip">Destaque</span></div>
 						<h3>E-commerce Olist: atraso na entrega × satisfação</h3>
 						<dl class="campo"><dt>Pergunta</dt><dd class="pergunta">O atraso na entrega derruba a satisfação do cliente? Onde vale a pena agir primeiro?</dd></dl>
-						<dl class="campo"><dt>O que eu fiz</dt><dd>Análise exploratória em Python de cerca de 100 mil pedidos reais (6 tabelas relacionais), com checagem de qualidade, tratamento e engenharia de atributos. Dashboard em Power BI com modelo Star Schema, Power Query e medidas DAX.</dd></dl>
-						<dl class="campo"><dt>Resultado</dt><dd><ul class="resultados"><li>Pedidos atrasados recebem nota média <strong>2,27</strong>, contra <strong>4,29</strong> dos entregues no prazo.</li><li>São só <strong>7%</strong> dos pedidos, mas geram <strong>32%</strong> das avaliações negativas.</li><li>O RJ, 2º maior mercado, atrasa quase <strong>3 vezes</strong> mais que SP.</li></ul></dd></dl>
+						<dl class="campo"><dt>O que eu fiz</dt><dd>Análise exploratória em Python de cerca de 100 mil pedidos reais (Olist, 2016–2018), juntando 6 tabelas relacionais, com checagem de qualidade, engenharia de atributos (tempo de entrega, dias de atraso), estatística descritiva e correlação de Pearson. Dashboard em Power BI com modelo Star Schema, Power Query e medidas DAX.</dd></dl>
+						<dl class="campo"><dt>Resultado</dt><dd><ul class="resultados"><li>Pedidos atrasados recebem nota média <strong>2,27</strong>, contra <strong>4,29</strong> dos entregues no prazo.</li><li>São só <strong>7%</strong> dos pedidos, mas geram <strong>32%</strong> das avaliações negativas.</li><li>O Nordeste concentra as maiores taxas de atraso (AL <strong>21%</strong>); o RJ, 2º maior mercado, atrasa <strong>12%</strong>, quase 3 vezes mais que SP e MG.</li><li>Faturamento de jan–ago/2018 <strong>141%</strong> maior que no mesmo período de 2017, com pico na Black Friday.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">pandas</span><span class="chip chip--neutro">Seaborn</span><span class="chip chip--neutro">Power BI</span><span class="chip chip--neutro">DAX</span><span class="chip chip--neutro">Star Schema</span></div>
 						<div class="projeto-links"><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/dashboard-ecommerce-olist" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>Ver código</a></div>
 					</div>
@@ -122,9 +122,9 @@
 						<div class="projeto-selos"><span class="chip">Destaque</span></div>
 						<h3>MONITORAÊ: para onde vai o dinheiro público de Mogi</h3>
 						<dl class="campo"><dt>Pergunta</dt><dd class="pergunta">Como mostrar, de forma simples para o cidadão, quanto a prefeitura gasta em cada área e quanto recebe do Estado?</dd></dl>
-						<dl class="campo"><dt>O que eu fiz</dt><dd>Web crawlers que coletam dados da API do Tesouro Nacional (SICONFI) e do portal da Prefeitura, tratam encoding e valores monetários e geram JSON. Um GitHub Actions roda a coleta toda semana e o site se atualiza sozinho. Versão acadêmica em PHP + MySQL.</dd></dl>
+						<dl class="campo"><dt>O que eu fiz</dt><dd>Web crawlers em PHP e Node.js que coletam dados do Portal da Transparência da Prefeitura, do site da Câmara e da API do Tesouro Nacional (SICONFI/RREO). Pipeline de ETL com GitHub Actions: a coleta roda toda semana e publica JSON, sem servidor nem banco em produção. Versão acadêmica com MySQL/MariaDB e script Python que converte SQL em JSON. Também cuidei da engenharia de requisitos (requisitos, matriz de rastreabilidade e casos de uso em UML), em equipe de 4 pessoas, na Fatec Mogi das Cruzes.</dd></dl>
 						<dl class="campo"><dt>Resultado</dt><dd><ul class="resultados"><li>Gastos por área de 2019 até hoje: <strong>R$ 2,3 bi</strong> em 2025, com Educação e Saúde à frente.</li><li>Repasses do Estado (ICMS e IPVA) e salários de <strong>5,6 mil</strong> servidores.</li><li>Corrigi um bug do crawler original que apagava os centavos dos salários.</li></ul></dd></dl>
-						<div class="stack"><span class="chip chip--neutro">Node.js</span><span class="chip chip--neutro">PHP</span><span class="chip chip--neutro">MySQL</span><span class="chip chip--neutro">APIs REST</span><span class="chip chip--neutro">GitHub Actions</span><span class="chip chip--neutro">JavaScript</span></div>
+						<div class="stack"><span class="chip chip--neutro">Node.js</span><span class="chip chip--neutro">PHP</span><span class="chip chip--neutro">MySQL</span><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">ETL</span><span class="chip chip--neutro">GitHub Actions</span><span class="chip chip--neutro">UML</span></div>
 						<div class="projeto-links"><a class="botao botao--primario botao--pequeno" href="https://iedahirari.github.io/Projeto-de-Engenharia-de-Software-2---ES2/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>Ver online</a><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/Projeto-de-Engenharia-de-Software-2---ES2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>Ver código</a></div>
 					</div>
 					<div class="projeto-imagem"><img src="assets/img/monitorae.png" alt="Página de relatórios do MONITORAÊ com gastos por área de governo" loading="lazy" width="1200" height="540"></div>
@@ -133,10 +133,10 @@
 						<article class="cartao projeto" id="projeto-webagri">
 					<div class="projeto-corpo">
 						<div class="projeto-selos"><span class="chip chip--pessego">Em andamento</span><span class="chip chip--lilas">Projeto em grupo</span></div>
-						<h3>Preditor de falhas em redes (Machine Learning)</h3>
-						<dl class="campo"><dt>Pergunta</dt><dd class="pergunta">Dá para prever que um equipamento de rede vai falhar antes que ele caia?</dd></dl>
-						<dl class="campo"><dt>O que eu fiz</dt><dd>Coleta de medições públicas de ping do RIPE Atlas (97 fluxos), rótulo de cada medição pelo desvio em relação ao próprio histórico (OK, RISCO, FALHA) e treino de uma árvore de decisão com separação temporal entre treino e teste. Projeto integrador conduzido em Scrum.</dd></dl>
-						<dl class="campo"><dt>Resultado</dt><dd><ul class="resultados"><li>Pipeline reprodutível em scripts, com relatório de qualidade e dicionário de dados.</li><li>Parâmetros fora do código e bloco de teste fechado até a avaliação final, para evitar vazamento de dados.</li></ul></dd></dl>
+						<h3>Preditor de degradação de rede com árvore de decisão</h3>
+						<dl class="campo"><dt>Pergunta</dt><dd class="pergunta">Dá para saber que um ponto da internet está degradando antes que ele caia, comparando cada medição com o comportamento normal do próprio fluxo?</dd></dl>
+						<dl class="campo"><dt>O que eu fiz</dt><dd>Coleta de medições reais de ping da API do RIPE Atlas (97 fluxos entre 20 destinos e 5 origens), rótulo de cada medição como OK, RISCO ou FALHA pelo desvio em relação ao próprio histórico, engenharia de atributos (z-score robusto, aumento de RTT, jitter, perda de pacotes, janelas móveis) e treino de uma árvore de decisão com corte temporal entre treino, validação e teste. Projeto integrador de 3 disciplinas, em Scrum, com equipe de 5 pessoas. Minha parte: coleta, limpeza, rotulagem e treino.</dd></dl>
+						<dl class="campo"><dt>Resultado</dt><dd><ul class="resultados"><li>Árvore treinada com mais de <strong>115 mil</strong> medições e validada em cerca de <strong>45 mil</strong>, com F1 macro de <strong>0,99</strong> e análise crítica dos erros.</li><li>Pipeline reprodutível, parâmetros em arquivos de configuração e dicionário de dados.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">scikit-learn</span><span class="chip chip--neutro">pandas</span><span class="chip chip--neutro">APIs REST</span><span class="chip chip--neutro">Scrum</span></div>
 						<div class="projeto-links"><a class="botao botao--contorno botao--pequeno" href="https://github.com/ZorahSai/Projeto-WebAgriculture-" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>Ver código</a></div>
 					</div>
@@ -147,8 +147,8 @@
 						<div class="projeto-selos"><span class="chip chip--lilas">Projeto em grupo</span></div>
 						<h3>Horta Limpa: dados de pesquisa viram jogo educativo</h3>
 						<dl class="campo"><dt>Pergunta</dt><dd class="pergunta">Por que as pessoas se preocupam com agrotóxicos, mas quase não pensam neles na hora de comprar?</dd></dl>
-						<dl class="campo"><dt>O que eu fiz</dt><dd>Questionário com 57 moradores de Mogi das Cruzes cruzado com os dados do programa PARA da Anvisa. Os achados viraram as regras de um jogo de navegador. Projeto de extensão do Centro Universitário Braz Cubas.</dd></dl>
-						<dl class="campo"><dt>Resultado</dt><dd><ul class="resultados"><li><strong>86%</strong> acham que agrotóxicos fazem mal, mas <strong>74%</strong> escolhem o alimento pela aparência.</li><li>A Anvisa encontrou <strong>20,6%</strong> das amostras irregulares no ciclo de 2024.</li></ul></dd></dl>
+						<dl class="campo"><dt>O que eu fiz</dt><dd>Questionário com 57 moradores de Mogi das Cruzes cruzado com os dados do programa PARA da Anvisa. Os achados viraram as regras de um jogo de navegador em que o jogador passa um ano cultivando uma horta, com cada mecânica ligada a uma base pedagógica (Piaget, Paulo Freire). Feito em JavaScript puro com mundo isométrico em Canvas 2D, funciona no computador e no celular. Projeto de extensão do Centro Universitário Braz Cubas.</dd></dl>
+						<dl class="campo"><dt>Resultado</dt><dd><ul class="resultados"><li><strong>86%</strong> se preocupam com agrotóxicos, mas <strong>73,7%</strong> escolhem o alimento pela aparência.</li><li>A Anvisa encontrou <strong>20,6%</strong> das amostras irregulares no ciclo de 2024.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">Pesquisa quantitativa</span><span class="chip chip--neutro">JavaScript</span><span class="chip chip--neutro">Canvas 2D</span></div>
 						<div class="projeto-links"><a class="botao botao--primario botao--pequeno" href="https://iedahirari.github.io/Horta-Limpa/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg>Jogar</a><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/Horta-Limpa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>Ver código</a></div>
 					</div>
@@ -210,7 +210,7 @@
 					<ol class="linha-tempo">
 						<li>
 							<h3>Gerente Comercial e de Operações</h3>
-							<div class="meta"><strong>Lua Luana</strong> · Suzano, SP · Jun/2020 – Set/2026</div>
+							<div class="meta"><strong>Lua Luana</strong> · São Paulo, SP · Jun/2020 – Set/2026</div>
 							<ul><li>Acompanhamento de KPIs diários e mensais, metas e funil de vendas.</li><li>Controle de estoque com curva ABC e giro de mercadorias para planejar compras e reduzir rupturas.</li><li>Relatórios gerenciais em planilhas para a diretoria e para o financeiro.</li><li>Liderança, recrutamento e treinamento da equipe de vendas.</li></ul>
 						</li>
 						<li>
@@ -220,7 +220,7 @@
 						</li>
 						<li>
 							<h3>Atendente de Vendas</h3>
-							<div class="meta"><strong>Lua Luana</strong> · Suzano, SP · Ago/2016 – Mar/2018</div>
+							<div class="meta"><strong>Lua Luana</strong> · São Paulo, SP · Ago/2016 – Mar/2018</div>
 							<ul><li>Atendimento consultivo, conferência de inventário e reposição de mercadorias.</li></ul>
 						</li>
 						<li>
@@ -235,12 +235,16 @@
 							<ul class="lista-simples"><li><strong>Bacharelado em Ciência da Computação</strong><span>Centro Universitário Braz Cubas · Previsão: 2029</span></li><li><strong>Graduação em Matemática</strong><span>Instituto Federal de São Paulo (IFSP) · Previsão: 2028</span></li><li><strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong><span>Fatec Mogi das Cruzes · 2019 – 2024 (interrompido)</span></li></ul>
 						</div>
 						<div class="cartao">
-							<h3>Cursos e publicação</h3>
-							<ul class="lista-simples"><li><strong>Artigo: &quot;Modelos de Controle de Acesso em Bancos de Dados na Nuvem: uma análise comparativa&quot;</strong><span>Revista EduFatec · 2023</span></li><li><strong>Microsoft Power BI: Preparando Dados para Análise, Análise de Dados no Power BI e Introdução a BI</strong><span>Bradesco Educação · 2024</span></li><li><strong>Implementando Banco de Dados Relacional e Modelagem SQL</strong><span>Bradesco Educação · 2023</span></li></ul>
+							<h3>Certificados e publicação</h3>
+							<ul class="lista-simples"><li><strong>Artigo: &quot;Modelos de Controle de Acesso em Bancos de Dados na Nuvem: uma análise comparativa&quot;</strong><span>Revista EduFatec, n. 6, v. 2 · 2023</span></li><li><strong>Preparando Dados para Análise com Microsoft Power BI</strong><span>Fundação Bradesco · jan/2025</span></li><li><strong>Cultura Digital</strong><span>Fundação Bradesco · jan/2025</span></li><li><strong>Análise de Dados no Power BI</strong><span>Fundação Bradesco · nov/2024</span></li><li><strong>Introdução à Análise de Dados: Microsoft Power BI</strong><span>Fundação Bradesco · nov/2024</span></li><li><strong>Implementando Banco de Dados</strong><span>Fundação Bradesco · dez/2023</span></li></ul>
+						</div>
+						<div class="cartao">
+							<h3>Voluntariado</h3>
+							<ul class="lista-simples"><li><strong>Monitora Voluntária: Inclusão Digital para a Melhor Idade</strong><span>Fatec Mogi das Cruzes · Mar/2019 – Jun/2019</span><span>Apoiei idosos nas aulas práticas de informática e ajudei a incluir no curso tarefas básicas no celular, com atendimento individual e linguagem simples para que cada aluno ganhasse autonomia.</span></li></ul>
 						</div>
 						<div class="cartao">
 							<h3>Idiomas</h3>
-							<ul class="lista-simples"><li><span>Português: nativo</span></li><li><span>Inglês: técnico (leitura e escrita)</span></li><li><span>Espanhol: básico</span></li></ul>
+							<ul class="lista-simples"><li><span>Português: nativo</span></li><li><span>Inglês: básico a intermediário</span></li><li><span>Espanhol: básico a intermediário</span></li></ul>
 						</div>
 					</div>
 				</div>

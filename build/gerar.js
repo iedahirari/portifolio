@@ -231,6 +231,10 @@ function paginaPortfolio(t) {
 							<ul class="lista-simples">${t.trajetoria.cursos.map((c) => `<li><strong>${esc(c.nome)}</strong><span>${esc(c.origem)} · ${esc(c.ano)}</span></li>`).join('')}</ul>
 						</div>
 						<div class="cartao">
+							<h3>${esc(t.trajetoria.voluntariadoTitulo)}</h3>
+							<ul class="lista-simples">${t.trajetoria.voluntariado.map((v) => `<li><strong>${esc(v.cargo)}</strong><span>${esc(v.instituicao)} · ${esc(v.periodo)}</span><span>${esc(v.texto)}</span></li>`).join('')}</ul>
+						</div>
+						<div class="cartao">
 							<h3>${esc(t.trajetoria.idiomasTitulo)}</h3>
 							<ul class="lista-simples">${t.trajetoria.idiomas.map((i) => `<li><span>${esc(i)}</span></li>`).join('')}</ul>
 						</div>
@@ -359,6 +363,13 @@ function paginaCurriculo(t) {
 		<ul>
 			${t.trajetoria.cursos.map((x) => `<li>${esc(x.nome)}. ${esc(x.origem)}, ${esc(x.ano)}.</li>`).join('\n\t\t\t')}
 		</ul>
+
+		<h2>${esc(t.trajetoria.voluntariadoTitulo)}</h2>
+		${t.trajetoria.voluntariado.map((v) => `<div class="item">
+			<div class="item-topo"><strong>${esc(v.cargo)}</strong><span class="data">${esc(v.periodo)}</span></div>
+			<div class="sub">${esc(v.instituicao)}</div>
+			<ul><li>${esc(v.texto)}</li></ul>
+		</div>`).join('\n\t\t')}
 	</main>
 </body>
 </html>
