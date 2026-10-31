@@ -106,7 +106,7 @@ function paginaPortfolio(t) {
 <head>
 	${cabecaComum(t, t.meta.titulo, t.meta.descricao, urlPagina, [['pt-BR', ''], ['en', 'en/'], ['x-default', '']])}
 	<script>document.documentElement.classList.add('js');</script>
-					<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-wine-balance-2">
+					<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-wine-balance-3">
 	<script type="application/ld+json">${JSON.stringify(pessoa)}</script>
 </head>
 <body>
