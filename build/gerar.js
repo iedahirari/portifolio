@@ -73,8 +73,7 @@ function cartaoProjeto(t, p) {
 		p.grupo && `<span class="chip chip--lilas">${t.rotulos.grupo}</span>`,
 	].filter(Boolean).join('');
 	const corpo = `<div class="projeto-corpo">
-						${selos ? `<div class="projeto-selos">${selos}</div>` : ''}
-						<h3>${esc(p.titulo)}</h3>
+						${selos ? `<div class="projeto-selos">${selos}</div>` : ''}<h3>${esc(p.titulo)}</h3>
 						<dl class="campo"><dt>${t.rotulos.pergunta}</dt><dd class="pergunta">${esc(p.pergunta)}</dd></dl>
 						<dl class="campo"><dt>${t.rotulos.fiz}</dt><dd>${esc(p.fiz)}</dd></dl>
 						<dl class="campo"><dt>${t.rotulos.resultado}</dt><dd><ul class="resultados">${p.resultado.map((r) => `<li>${r}</li>`).join('')}</ul></dd></dl>
@@ -98,7 +97,7 @@ function paginaPortfolio(t) {
 		'@context': 'https://schema.org', '@type': 'Person', name: contato.nome, url: contato.site + urlPagina, image: contato.foto,
 		jobTitle: t.hero.cargo, email: `mailto:${contato.email}`, address: { '@type': 'PostalAddress', addressLocality: 'Suzano', addressRegion: 'SP', addressCountry: 'BR' },
 		sameAs: [contato.linkedin, contato.github],
-		knowsAbout: ['Python', 'SQL', 'Power BI', 'Data Analysis', 'Business Intelligence', 'pandas'],
+		knowsAbout: ['Business Analysis', 'Requirements Analysis', 'Business Processes', 'BPMN', 'Functional Support', 'Systems Implementation', 'Operations', 'SQL', 'Excel', 'Power BI'],
 	};
 
 	return `<!DOCTYPE html>

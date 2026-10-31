@@ -29,33 +29,33 @@ const pt = {
   arquivo: { site: 'index.html', curriculo: 'curriculo.html', pdf: 'Curriculo_Ieda_Oliveira.pdf' },
   outro: { rotulo: 'English', site: 'en/', curriculo: 'en/resume.html' },
   meta: {
-    titulo: 'Ieda Oliveira · Análise de Dados & BI',
-    descricao: 'Portfólio de Ieda Oliveira: estudante de Matemática e Ciência da Computação em transição para Análise de Dados e BI, com projetos em Python, SQL e Power BI.',
+    titulo: 'Ieda Oliveira · Negócios, Requisitos e Processos',
+    descricao: 'Portfólio de Ieda Oliveira: estudante de Ciência da Computação e Matemática, com foco em análise de negócios, requisitos, processos e operações.',
   },
   menu: { sobre: 'Sobre', projetos: 'Projetos', habilidades: 'Habilidades', trajetoria: 'Trajetória', contato: 'Contato' },
   hero: {
     status: 'Disponível para estágio e vagas júnior',
-    cargo: 'Análise de Dados & BI',
+    cargo: 'Análise de Negócios, Requisitos e Processos',
     subtitulo: 'em transição de carreira',
-    texto: 'Estudante de Matemática (IFSP) e Ciência da Computação. Junto 6 anos de gestão comercial com Python, SQL e Power BI para transformar dados em decisões.',
+    texto: 'Estudante de Ciência da Computação e Matemática. Busco estágio ou vaga júnior como Analista de Negócios, Analista de Requisitos ou Assistente de Processos. Também considero Suporte Funcional e Implantação de Sistemas.',
     projetos: 'Ver projetos',
     curriculo: 'Currículo',
     curriculoEn: 'Resume (EN)',
   },
   diferenciais: {
-    titulo: 'O que eu levo para um time de dados',
+    titulo: 'O que levo para times de negócios e tecnologia',
     itens: [
-      { icone: 'calc', titulo: 'Base quantitativa', texto: 'Matemática no IFSP e Ciência da Computação: estatística, lógica e programação no dia a dia.' },
-      { icone: 'loja', titulo: 'Visão de negócio', texto: '6 anos como gerente comercial acompanhando metas, curva ABC, giro de estoque e equipe. Sei que pergunta o dado precisa responder.' },
-      { icone: 'codigo', titulo: 'Projetos com dados reais', texto: 'Crawlers, análises e dashboards com dados públicos, publicados no GitHub para qualquer pessoa conferir.' },
+      { icone: 'loja', titulo: 'Experiência em operações', texto: '6 anos em gestão comercial acompanhando metas, indicadores, estoque e equipe, com relatórios para apoiar decisões.' },
+      { icone: 'codigo', titulo: 'Requisitos e sistemas', texto: 'Em projeto acadêmico, participei do levantamento de requisitos, matriz de rastreabilidade e casos de uso UML para um sistema com dados públicos.' },
+      { icone: 'calc', titulo: 'Base técnica e quantitativa', texto: 'Estudo Ciência da Computação e Matemática e aplico SQL, Excel, Python e Power BI em projetos. Também concluí modelagem de processos com BPMN no Bizagi.' },
     ],
   },
   projetosTitulo: 'Projetos',
-  projetosIntro: 'Cada projeto começa com uma pergunta de negócio. Clique para ver o código, os dados e o resultado.',
+  projetosIntro: 'Projetos acadêmicos e de portfólio que conectam necessidades, requisitos, sistemas e análise de dados.',
   rotulos: { pergunta: 'Pergunta', fiz: 'O que eu fiz', resultado: 'Resultado', codigo: 'Ver código', online: 'Ver online', jogar: 'Jogar', ler: 'Ler artigo', emAndamento: 'Em andamento', destaque: 'Destaque', grupo: 'Projeto em grupo' },
   projetos: [
     {
-      id: 'olist', destaque: true,
+      id: 'olist',
       titulo: 'E-commerce Olist: atraso na entrega × satisfação',
       pergunta: 'O atraso na entrega derruba a satisfação do cliente? Onde vale a pena agir primeiro?',
       fiz: 'Análise exploratória em Python de cerca de 100 mil pedidos reais (Olist, 2016–2018), juntando 6 tabelas relacionais, com checagem de qualidade, engenharia de atributos (tempo de entrega, dias de atraso), estatística descritiva e correlação de Pearson. Dashboard em Power BI com modelo Star Schema, Power Query e medidas DAX.',
@@ -120,20 +120,20 @@ const pt = {
     },
   ],
   habilidades: {
-    titulo: 'Habilidades',
-    intro: 'Separei o que já uso em projetos do que estou estudando agora.',
-    usoTitulo: 'Uso em projetos',
+    titulo: 'Competências',
+    intro: 'Competências demonstradas em projetos acadêmicos e na experiência em operações.',
+    usoTitulo: 'Negócios, processos e tecnologia',
     estudoTitulo: 'Estudando agora',
     grupos: [
-      { titulo: 'Análise & Python', itens: ['Python (pandas, NumPy)', 'Matplotlib e Seaborn', 'Jupyter', 'Análise exploratória (EDA)', 'Estatística descritiva'] },
-      { titulo: 'BI & Visualização', itens: ['Power BI (DAX, Power Query)', 'Modelagem Star Schema', 'Looker Studio', 'Excel (tabelas dinâmicas, PROCV/XLOOKUP)', 'Storytelling com dados'] },
-      { titulo: 'Dados & Engenharia', itens: ['SQL (joins, agregações, subconsultas)', 'MySQL e modelagem relacional', 'Web scraping e APIs REST', 'Automação com GitHub Actions', 'Git e GitHub'] },
+      { titulo: 'Negócios & processos', itens: ['Levantamento e organização de requisitos (projeto acadêmico)', 'Matriz de rastreabilidade e casos de uso UML', 'Modelagem de processos BPMN com Bizagi', 'Indicadores, metas e funil de vendas', 'Curva ABC e giro de estoque'] },
+      { titulo: 'Sistemas & dados', itens: ['SQL (joins, agregações, subconsultas)', 'MySQL e modelagem relacional', 'PHP e Node.js em projetos', 'Web scraping e APIs REST', 'Git e GitHub'] },
+      { titulo: 'Relatórios & BI', itens: ['Excel (tabelas dinâmicas e PROCV/XLOOKUP)', 'Power BI (DAX, Power Query)', 'Modelagem Star Schema', 'Python (pandas, NumPy)', 'Jupyter, Matplotlib e Seaborn'] },
     ],
     estudo: ['Machine Learning com scikit-learn', 'Estatística inferencial', 'PostgreSQL'],
   },
   trajetoria: {
     titulo: 'Trajetória',
-    intro: 'Antes de tecnologia, trabalhei com metas, estoque e clientes. É dessa experiência que vêm as perguntas que hoje respondo com dados.',
+    intro: 'Minha experiência em operações ajuda a entender necessidades de negócio; a formação e os projetos acadêmicos complementam essa base com requisitos, processos e sistemas.',
     experiencias: [
       {
         cargo: 'Gerente Comercial e de Operações', empresa: 'Lua Luana', local: 'São Paulo, SP', periodo: 'Jun/2020 – Set/2026',
@@ -165,6 +165,7 @@ const pt = {
     ],
     cursosTitulo: 'Certificados e publicação',
     cursos: [
+      { nome: 'Process Modeling — Bizagi (modelagem de processos com BPMN)', origem: 'Bizagi', ano: 'out/2026' },
       { nome: 'Artigo: "Modelos de Controle de Acesso em Bancos de Dados na Nuvem: uma análise comparativa"', origem: 'Revista EduFatec, n. 6, v. 2', ano: '2023' },
       { nome: 'Preparando Dados para Análise com Microsoft Power BI', origem: 'Fundação Bradesco', ano: 'jan/2025' },
       { nome: 'Cultura Digital', origem: 'Fundação Bradesco', ano: 'jan/2025' },
@@ -184,7 +185,7 @@ const pt = {
   },
   contatoSecao: {
     titulo: 'Vamos conversar?',
-    texto: 'Procuro estágio ou vaga júnior em Análise de Dados, BI ou áreas próximas. Respondo rápido por e-mail, LinkedIn ou WhatsApp.',
+    texto: 'Procuro estágio ou vaga júnior como Analista de Negócios, Analista de Requisitos ou Assistente de Processos. Também considero Suporte Funcional e Implantação de Sistemas; Dados/BI com foco em operações é complementar.',
     email: 'Enviar e-mail',
     whatsapp: 'WhatsApp',
     mensagemWhats: 'Olá, Ieda! Vi seu portfólio e gostaria de conversar.',
@@ -193,9 +194,9 @@ const pt = {
   curriculo: {
     titulo: 'Currículo · Ieda Oliveira',
     objetivoTitulo: 'Objetivo',
-    objetivo: 'Estágio ou posição júnior em Análise de Dados, Business Intelligence ou áreas próximas.',
+    objetivo: 'Estágio ou vaga júnior como Analista de Negócios, Analista de Requisitos ou Assistente de Processos. Também considero Suporte Funcional, Implantação de Sistemas e Analista de Sistemas de Negócios; Dados/BI com foco em operações é complementar.',
     resumoTitulo: 'Resumo',
-    resumo: 'Estudante de Matemática (IFSP) e Ciência da Computação (Braz Cubas) em transição de carreira para dados, com 6 anos de experiência em gestão comercial acompanhando KPIs, estoque e equipe. Desenvolvo projetos com Python (pandas), SQL e Power BI sobre dados reais, como uma análise de 100 mil pedidos de e-commerce e crawlers que coletam dados públicos da API do Tesouro Nacional. Artigo publicado sobre segurança de bancos de dados na nuvem.',
+    resumo: 'Estudante de Ciência da Computação (Braz Cubas) e Licenciatura em Matemática (IFSP), buscando estágio ou vaga júnior como Analista de Negócios, Analista de Requisitos ou Assistente de Processos. Também considero Suporte Funcional, Implantação de Sistemas e Analista de Sistemas de Negócios; Dados/BI com foco em operações é complementar. Tenho mais de 6 anos de experiência em gestão comercial e operações, acompanhando indicadores, metas, estoque e equipe e elaborando relatórios para apoiar decisões. Em projeto acadêmico, participei do levantamento e organização de requisitos, matriz de rastreabilidade, casos de uso UML e desenvolvimento de sistema em equipe. Concluí Process Modeling — Bizagi (BPMN) em outubro de 2026. Também aplico SQL, Excel, Python e Power BI em projetos de análise de dados, incluindo estudo de cerca de 100 mil pedidos de e-commerce.',
     habilidadesTitulo: 'Habilidades',
     projetosTitulo: 'Projetos',
     experienciaTitulo: 'Experiência profissional',
@@ -205,17 +206,17 @@ const pt = {
     dica: 'Formato em uma coluna, legível por sistemas de recrutamento (Gupy, LinkedIn, Indeed).',
     projetos: [
       {
+        titulo: 'MONITORAÊ: requisitos e sistema de transparência pública', stack: 'Engenharia de requisitos, UML, PHP, Node.js, SQL', url: links.monitoraeSite,
+        itens: [
+          'Participou do levantamento e organização dos requisitos, elaboração de matriz de rastreabilidade e casos de uso UML em equipe acadêmica.',
+          'Desenvolveu crawlers e apoiou a publicação de dados públicos do Tesouro Nacional e da Prefeitura de Mogi das Cruzes.',
+        ],
+      },
+      {
         titulo: 'Análise de satisfação e entregas em e-commerce (Olist)', stack: 'Python, pandas, Seaborn, Power BI, DAX', url: links.olist,
         itens: [
           'Analisou cerca de 100 mil pedidos reais (6 tabelas) e mostrou que pedidos atrasados recebem nota média 2,27 contra 4,29 dos entregues no prazo, e geram 32% das avaliações negativas sendo só 7% dos pedidos.',
           'Construiu dashboard de vendas e logística em Power BI com modelo Star Schema, Power Query e medidas DAX (faturamento, ticket médio, prazo e taxa de atraso).',
-        ],
-      },
-      {
-        titulo: 'MONITORAÊ: portal de transparência de Mogi das Cruzes', stack: 'Node.js, PHP, MySQL, GitHub Actions', url: links.monitoraeSite,
-        itens: [
-          'Desenvolveu crawlers que coletam dados da API do Tesouro Nacional (SICONFI) e do portal da Prefeitura, com tratamento de encoding e valores monetários.',
-          'Automatizou a coleta semanal com GitHub Actions e publicou relatórios de gastos por área e repasses do Estado para o cidadão.',
         ],
       },
       {
@@ -231,33 +232,33 @@ const en = {
   arquivo: { site: 'en/index.html', curriculo: 'en/resume.html', pdf: 'Resume_Ieda_Oliveira.pdf' },
   outro: { rotulo: 'Português', site: '../', curriculo: '../curriculo.html' },
   meta: {
-    titulo: 'Ieda Oliveira · Data Analytics & BI',
-    descricao: 'Portfolio of Ieda Oliveira: Mathematics and Computer Science student moving into Data Analytics and BI, with projects in Python, SQL and Power BI.',
+    titulo: 'Ieda Oliveira · Business Analysis, Requirements & Processes',
+    descricao: 'Portfolio of Ieda Oliveira: Computer Science and Mathematics student focused on business analysis, requirements, processes and operations.',
   },
   menu: { sobre: 'About', projetos: 'Projects', habilidades: 'Skills', trajetoria: 'Experience', contato: 'Contact' },
   hero: {
     status: 'Open to internships and junior roles',
-    cargo: 'Data Analytics & BI',
+    cargo: 'Business Analysis, Requirements & Processes',
     subtitulo: 'career changer',
-    texto: 'Mathematics (IFSP) and Computer Science student. I combine 6 years of retail management with Python, SQL and Power BI to turn data into decisions.',
+    texto: 'Computer Science and Mathematics student seeking junior or internship roles as a Business Analyst, Requirements Analyst or Process Assistant. Also open to Functional Support and Systems Implementation roles.',
     projetos: 'See projects',
     curriculo: 'Resume',
     curriculoEn: 'Currículo (PT)',
   },
   diferenciais: {
-    titulo: 'What I bring to a data team',
+    titulo: 'What I bring to business and technology teams',
     itens: [
-      { icone: 'calc', titulo: 'Quantitative background', texto: 'Mathematics at IFSP and Computer Science: statistics, logic and programming every day.' },
-      { icone: 'loja', titulo: 'Business sense', texto: '6 years as a retail manager tracking targets, ABC analysis, inventory turnover and a sales team. I know which question the data needs to answer.' },
-      { icone: 'codigo', titulo: 'Real-data projects', texto: 'Crawlers, analyses and dashboards built on public data and published on GitHub for anyone to check.' },
+      { icone: 'loja', titulo: 'Operations experience', texto: '6 years in commercial management tracking targets, indicators, inventory and teams, with reports to support decisions.' },
+      { icone: 'codigo', titulo: 'Requirements and systems', texto: 'In an academic team project, I contributed to requirements gathering, a traceability matrix and UML use cases for a public-data system.' },
+      { icone: 'calc', titulo: 'Technical and quantitative foundation', texto: 'I study Computer Science and Mathematics and use SQL, Excel, Python and Power BI in projects. I also completed BPMN process modeling with Bizagi.' },
     ],
   },
   projetosTitulo: 'Projects',
-  projetosIntro: 'Every project starts with a business question. Open them to see the code, the data and the result.',
+  projetosIntro: 'Academic and portfolio projects connecting business needs, requirements, systems and data analysis.',
   rotulos: { pergunta: 'Question', fiz: 'What I did', resultado: 'Result', codigo: 'View code', online: 'Live site', jogar: 'Play', ler: 'Read paper', emAndamento: 'In progress', destaque: 'Featured', grupo: 'Team project' },
   projetos: [
     {
-      id: 'olist', destaque: true,
+      id: 'olist',
       titulo: 'Olist e-commerce: late deliveries × customer satisfaction',
       pergunta: 'Do late deliveries hurt customer satisfaction? Where should the company act first?',
       fiz: 'Exploratory analysis in Python of about 100k real orders (Olist, 2016–2018), joining 6 relational tables, with data quality checks, feature engineering (delivery time, days late), descriptive statistics and Pearson correlation. Power BI dashboard with a star schema, Power Query and DAX measures.',
@@ -323,19 +324,19 @@ const en = {
   ],
   habilidades: {
     titulo: 'Skills',
-    intro: 'What I already use in projects, and what I am learning right now.',
-    usoTitulo: 'Used in projects',
+    intro: 'Skills demonstrated in academic projects and commercial operations experience.',
+    usoTitulo: 'Business, processes and technology',
     estudoTitulo: 'Currently learning',
     grupos: [
-      { titulo: 'Analysis & Python', itens: ['Python (pandas, NumPy)', 'Matplotlib and Seaborn', 'Jupyter', 'Exploratory data analysis (EDA)', 'Descriptive statistics'] },
-      { titulo: 'BI & Visualization', itens: ['Power BI (DAX, Power Query)', 'Star schema modeling', 'Looker Studio', 'Excel (pivot tables, VLOOKUP/XLOOKUP)', 'Data storytelling'] },
-      { titulo: 'Data & Engineering', itens: ['SQL (joins, aggregations, subqueries)', 'MySQL and relational modeling', 'Web scraping and REST APIs', 'Automation with GitHub Actions', 'Git and GitHub'] },
+      { titulo: 'Business & processes', itens: ['Requirements gathering and organization (academic project)', 'Traceability matrix and UML use cases', 'BPMN process modeling with Bizagi', 'Sales indicators, targets and funnel', 'ABC analysis and inventory turnover'] },
+      { titulo: 'Systems & data', itens: ['SQL (joins, aggregations, subqueries)', 'MySQL and relational modeling', 'PHP and Node.js in projects', 'Web scraping and REST APIs', 'Git and GitHub'] },
+      { titulo: 'Reporting & BI', itens: ['Excel (pivot tables and VLOOKUP/XLOOKUP)', 'Power BI (DAX, Power Query)', 'Star schema modeling', 'Python (pandas, NumPy)', 'Jupyter, Matplotlib and Seaborn'] },
     ],
     estudo: ['Machine Learning with scikit-learn', 'Inferential statistics', 'PostgreSQL'],
   },
   trajetoria: {
     titulo: 'Experience',
-    intro: 'Before tech, I worked with sales targets, inventory and customers. That is where the questions I now answer with data come from.',
+    intro: 'My operations background helps me understand business needs; my studies and academic projects add experience with requirements, processes and systems.',
     experiencias: [
       {
         cargo: 'Sales & Operations Manager', empresa: 'Lua Luana (retail)', local: 'São Paulo, Brazil', periodo: 'Jun 2020 – Sep 2026',
@@ -367,6 +368,7 @@ const en = {
     ],
     cursosTitulo: 'Certifications & publication',
     cursos: [
+      { nome: 'Process Modeling — Bizagi (BPMN process modeling)', origem: 'Bizagi', ano: 'Oct 2026' },
       { nome: 'Paper: "Access Control Models for Cloud Databases: a comparative analysis" (in Portuguese)', origem: 'Revista EduFatec, no. 6, v. 2', ano: '2023' },
       { nome: 'Preparing Data for Analysis with Microsoft Power BI', origem: 'Fundação Bradesco', ano: 'Jan 2025' },
       { nome: 'Digital Culture', origem: 'Fundação Bradesco', ano: 'Jan 2025' },
@@ -386,7 +388,7 @@ const en = {
   },
   contatoSecao: {
     titulo: 'Let’s talk',
-    texto: 'I am looking for an internship or junior role in Data Analytics, BI or related areas. I reply quickly by email, LinkedIn or WhatsApp.',
+    texto: 'I am seeking a junior or internship role as a Business Analyst, Requirements Analyst or Process Assistant. I also consider Functional Support and Systems Implementation; Data/BI focused on operations is complementary.',
     email: 'Send email',
     whatsapp: 'WhatsApp',
     mensagemWhats: 'Hi Ieda! I saw your portfolio and would like to talk.',
@@ -395,9 +397,9 @@ const en = {
   curriculo: {
     titulo: 'Resume · Ieda Oliveira',
     objetivoTitulo: 'Objective',
-    objetivo: 'Internship or junior role in Data Analytics, Business Intelligence or related areas.',
+    objetivo: 'Internship or junior role as a Business Analyst, Requirements Analyst or Process Assistant. Also open to Functional Support, Systems Implementation and Business Systems Analyst roles; Data/BI focused on operations is complementary.',
     resumoTitulo: 'Summary',
-    resumo: 'Mathematics (IFSP) and Computer Science (Braz Cubas) student moving into data, with 6 years of retail management experience tracking KPIs, inventory and a sales team. I build projects with Python (pandas), SQL and Power BI on real data, such as an analysis of 100k e-commerce orders and crawlers that collect public data from the Brazilian Treasury API. Published paper on cloud database security.',
+    resumo: 'Computer Science (Braz Cubas) and Mathematics (IFSP) student seeking a junior or internship role as a Business Analyst, Requirements Analyst or Process Assistant. Also open to Functional Support, Systems Implementation and Business Systems Analyst roles; Data/BI focused on operations is complementary. I have over 6 years of commercial operations management experience tracking indicators, targets, inventory and teams and preparing reports to support decisions. In an academic project, I contributed to requirements gathering and organization, a traceability matrix, UML use cases and team-based system development. I completed Process Modeling — Bizagi (BPMN) in October 2026. I also use SQL, Excel, Python and Power BI in data analysis projects, including a study of about 100k e-commerce orders.',
     habilidadesTitulo: 'Skills',
     projetosTitulo: 'Projects',
     experienciaTitulo: 'Professional experience',
@@ -407,17 +409,17 @@ const en = {
     dica: 'Single-column format, readable by applicant tracking systems (LinkedIn, Indeed, Workday).',
     projetos: [
       {
+        titulo: 'MONITORAÊ: requirements and public transparency system', stack: 'Requirements engineering, UML, PHP, Node.js, SQL', url: links.monitoraeSite,
+        itens: [
+          'Contributed to requirements gathering and organization, a traceability matrix and UML use cases in an academic team project.',
+          'Developed crawlers and supported publication of public data from the Brazilian Treasury and Mogi das Cruzes City Hall.',
+        ],
+      },
+      {
         titulo: 'E-commerce delivery and satisfaction analysis (Olist)', stack: 'Python, pandas, Seaborn, Power BI, DAX', url: links.olist,
         itens: [
           'Analyzed about 100k real orders (6 tables) and showed that late orders average a 2.27 rating versus 4.29 for on-time orders, driving 32% of negative reviews while being only 7% of orders.',
           'Built a sales and logistics dashboard in Power BI with a star schema, Power Query and DAX measures (revenue, average order value, delivery time and late rate).',
-        ],
-      },
-      {
-        titulo: 'MONITORAÊ: public spending transparency portal', stack: 'Node.js, PHP, MySQL, GitHub Actions', url: links.monitoraeSite,
-        itens: [
-          'Developed crawlers that collect data from the Brazilian Treasury API (SICONFI) and the city portal, handling encoding and currency formats.',
-          'Automated weekly data collection with GitHub Actions and published spending-by-area and state-transfer reports for citizens.',
         ],
       },
       {
