@@ -75,6 +75,25 @@ h3 { font-size: 1.15rem; }
 .oculto { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Botões e etiquetas */
+#tela-carregamento { display: none; }
+.js #tela-carregamento {
+	position: fixed; inset: 0; z-index: 110; display: flex; flex-direction: column;
+	align-items: center; justify-content: center; gap: 16px;
+	background: var(--fundo); color: var(--titulo);
+	transition: opacity .32s ease, visibility .32s ease;
+}
+.js #tela-carregamento.saindo { opacity: 0; visibility: hidden; pointer-events: none; }
+.marca-carregamento { font-family: var(--fonte-titulo); font-size: 1.8rem; letter-spacing: -.03em; }
+.marca-carregamento span { color: var(--rosa); }
+.trilho-carregamento { width: min(220px, 54vw); height: 3px; overflow: hidden; border-radius: 3px; background: var(--borda); }
+.trilho-carregamento span { display: block; width: 0; height: 100%; background: linear-gradient(90deg, var(--rosa), var(--lilas-forte)); animation: carregar 1.15s ease-out forwards; }
+#tela-carregamento p { margin: 0; color: var(--texto-suave); font-size: .78rem; letter-spacing: .08em; }
+@keyframes carregar { to { width: 100%; } }
+@media (prefers-reduced-motion: reduce) {
+	.js #tela-carregamento { display: none !important; }
+	.trilho-carregamento span { animation: none; width: 100%; }
+}
+
 .botao {
 	display: inline-flex; align-items: center; justify-content: center; gap: 8px;
 	padding: 12px 22px; border-radius: 999px; border: 1.5px solid transparent;

@@ -101,10 +101,16 @@ function paginaPortfolio(t) {
 <html lang="${t.lang}">
 <head>
 	${cabecaComum(t, t.meta.titulo, t.meta.descricao, urlPagina, [['pt-BR', ''], ['en', 'en/'], ['x-default', '']])}
-	<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-cards">
+	<script>document.documentElement.classList.add('js');</script>
+	<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-cards-loader">
 	<script type="application/ld+json">${JSON.stringify(pessoa)}</script>
 </head>
 <body>
+	<div id="tela-carregamento" aria-hidden="true">
+		<div class="marca-carregamento">Ieda <span>Oliveira</span></div>
+		<div class="trilho-carregamento"><span></span></div>
+		<p>Preparando meu portfólio</p>
+	</div>
 	<div id="progresso-leitura" aria-hidden="true"></div>
 	<a class="pular" href="#conteudo">${t.lang === 'en' ? 'Skip to content' : 'Pular para o conteúdo'}</a>
 
@@ -267,6 +273,24 @@ function paginaPortfolio(t) {
 		menu.addEventListener('click', function (e) {
 			if (e.target.closest('a')) { menu.classList.remove('aberto'); botao.setAttribute('aria-expanded', 'false'); }
 		});
+
+		// Loader curto: fecha no carregamento ou após o limite de segurança
+		var telaCarregamento = document.getElementById('tela-carregamento');
+		var telaFechada = false;
+		function fecharCarregamento() {
+			if (telaFechada || !telaCarregamento) return;
+			telaFechada = true;
+			if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { telaCarregamento.remove(); return; }
+			telaCarregamento.classList.add('saindo');
+			window.setTimeout(function () { telaCarregamento.remove(); }, 350);
+		}
+		if (telaCarregamento) {
+			if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) fecharCarregamento();
+			else {
+				window.addEventListener('load', function () { window.setTimeout(fecharCarregamento, 1150); }, { once: true });
+				window.setTimeout(fecharCarregamento, 1800);
+			}
+		}
 
 		// Barra fina de leitura, atualizada no máximo uma vez por frame
 		var progresso = document.getElementById('progresso-leitura');

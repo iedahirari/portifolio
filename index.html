@@ -22,10 +22,16 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap">
-	<link rel="stylesheet" href="assets/estilo.css?v=20261031-cards">
+	<script>document.documentElement.classList.add('js');</script>
+	<link rel="stylesheet" href="assets/estilo.css?v=20261031-cards-loader">
 	<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ieda Oliveira","url":"https://iedahirari.github.io/portifolio/","image":"https://avatars.githubusercontent.com/u/61597704?v=4","jobTitle":"Análise de Negócios, Requisitos e Processos","email":"mailto:iedahirari@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Suzano","addressRegion":"SP","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/in/ieda-oliveira/","https://github.com/iedahirari"],"knowsAbout":["Business Analysis","Requirements Analysis","Business Processes","BPMN","Functional Support","Systems Implementation","Operations","SQL","Excel","Power BI"]}</script>
 </head>
 <body>
+	<div id="tela-carregamento" aria-hidden="true">
+		<div class="marca-carregamento">Ieda <span>Oliveira</span></div>
+		<div class="trilho-carregamento"><span></span></div>
+		<p>Preparando meu portfólio</p>
+	</div>
 	<div id="progresso-leitura" aria-hidden="true"></div>
 	<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
@@ -275,6 +281,24 @@
 		menu.addEventListener('click', function (e) {
 			if (e.target.closest('a')) { menu.classList.remove('aberto'); botao.setAttribute('aria-expanded', 'false'); }
 		});
+
+		// Loader curto: fecha no carregamento ou após o limite de segurança
+		var telaCarregamento = document.getElementById('tela-carregamento');
+		var telaFechada = false;
+		function fecharCarregamento() {
+			if (telaFechada || !telaCarregamento) return;
+			telaFechada = true;
+			if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { telaCarregamento.remove(); return; }
+			telaCarregamento.classList.add('saindo');
+			window.setTimeout(function () { telaCarregamento.remove(); }, 350);
+		}
+		if (telaCarregamento) {
+			if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) fecharCarregamento();
+			else {
+				window.addEventListener('load', function () { window.setTimeout(fecharCarregamento, 1150); }, { once: true });
+				window.setTimeout(fecharCarregamento, 1800);
+			}
+		}
 
 		// Barra fina de leitura, atualizada no máximo uma vez por frame
 		var progresso = document.getElementById('progresso-leitura');
