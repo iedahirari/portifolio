@@ -45,7 +45,7 @@ function cabecaComum(t, titulo, descricao, urlPagina, alternativas) {
 	<title>${esc(titulo)}</title>
 	<meta name="description" content="${esc(descricao)}">
 	<meta name="author" content="${esc(contato.nome)}">
-	<meta name="theme-color" content="#656b5c">
+	<meta name="theme-color" content="#74070e">
 	<link rel="canonical" href="${contato.site}${urlPagina}">
 	${alternativas.map(([lang, url]) => `<link rel="alternate" hreflang="${lang}" href="${contato.site}${url}">`).join('\n\t')}
 	<meta property="og:type" content="profile">
@@ -106,7 +106,7 @@ function paginaPortfolio(t) {
 <head>
 	${cabecaComum(t, t.meta.titulo, t.meta.descricao, urlPagina, [['pt-BR', ''], ['en', 'en/'], ['x-default', '']])}
 	<script>document.documentElement.classList.add('js');</script>
-					<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-oliva-cards">
+					<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-blood-vanilla">
 	<script type="application/ld+json">${JSON.stringify(pessoa)}</script>
 </head>
 <body>

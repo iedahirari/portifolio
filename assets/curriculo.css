@@ -1,13 +1,13 @@
 /* Currículo: uma coluna, texto real (legível por sistemas de recrutamento), A4 na impressão */
 
 :root {
-	--texto: #39382f;
-	--texto-suave: #5b5c52;
-	--titulo: #4d4b3b;
-	--rosa: #805338;
-	--rosa-claro: #f0e3d7;
-	--borda: #dfd5c8;
-	--fundo: #f8f5ef;
+	--texto: #310e10;
+	--texto-suave: #594541;
+	--titulo: #310e10;
+	--rosa: #74070e;
+	--rosa-claro: #ead6ca;
+	--borda: #d9c8ae;
+	--fundo: #f4e3b2;
 	--fonte: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 	--fonte-titulo: "DM Serif Display", Georgia, serif;
 }
@@ -35,7 +35,7 @@ a { color: var(--rosa); }
 .folha {
 	width: 210mm; max-width: calc(100% - 24px); min-height: 297mm;
 	margin: 24px auto; padding: 16mm 17mm; background: #fff;
-	box-shadow: 0 10px 40px rgba(77, 75, 59, .12); border-radius: 4px;
+	box-shadow: 0 10px 40px rgba(49, 14, 16, .14); border-radius: 4px;
 }
 @media (max-width: 640px) { .folha { padding: 22px 18px; min-height: 0; } }
 

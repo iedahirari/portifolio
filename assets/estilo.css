@@ -1,29 +1,29 @@
 /* ==========================================================================
    Portfólio Ieda Oliveira — design system
-   Paleta: bege, terracota e oliva, com tons escuros para contraste AA.
+   Paleta: vermelho sangue, baunilha, oliva escuro, cinza rosado e marrom.
    ========================================================================== */
 
 :root {
-	--fundo: #f8f5ef;
-	--superficie: #fffdfa;
-	--superficie-2: #edf0e9;
-	--pessego: #f2e4d8;
-	--lilas: #e7ebe3;
-	--borda: #dfd5c8;
+	--fundo: #f4e3b2;
+	--superficie: #fff9e8;
+	--superficie-2: #eee4ce;
+	--pessego: #ead6ca;
+	--lilas: #e8e1d5;
+	--borda: #d9c8ae;
 
-	--texto: #39382f;
-	--texto-suave: #5b5c52;
-	--titulo: #4d4b3b;
+	--texto: #310e10;
+	--texto-suave: #594541;
+	--titulo: #310e10;
 
-	--rosa: #805338;          /* terracota escuro para links e ações legíveis */
-	--rosa-forte: #68432d;
-	--rosa-claro: #f0e3d7;
-	--rosa-vivo: #a56840;
-	--lilas-forte: #656b5c;
-	--verde: #656b5c;
+	--rosa: #74070e;
+	--rosa-forte: #57050a;
+	--rosa-claro: #ead6ca;
+	--rosa-vivo: #947268;
+	--lilas-forte: #45462a;
+	--verde: #45462a;
 
-	--sombra: 0 1px 2px rgba(77, 75, 59, .06), 0 10px 30px rgba(77, 75, 59, .08);
-	--sombra-forte: 0 18px 50px rgba(77, 75, 59, .16);
+	--sombra: 0 1px 2px rgba(49, 14, 16, .06), 0 10px 30px rgba(49, 14, 16, .09);
+	--sombra-forte: 0 18px 50px rgba(49, 14, 16, .18);
 	--raio: 20px;
 	--raio-pequeno: 12px;
 	--largura: 1120px;
@@ -33,20 +33,20 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--fundo: #252720;
-		--superficie: #30332b;
-		--superficie-2: #3a4036;
-		--pessego: #49372c;
-		--lilas: #394238;
-		--borda: #515549;
-		--texto: #f3eee5;
-		--texto-suave: #d2cabc;
-		--titulo: #ead9c8;
-		--rosa: #d5a27f;
-		--rosa-forte: #e4b998;
-		--rosa-claro: #45382e;
-		--lilas-forte: #c1cbb9;
-		--verde: #b9c5af;
+		--fundo: #210b0d;
+		--superficie: #310e10;
+		--superficie-2: #45462a;
+		--pessego: #57443d;
+		--lilas: #45462a;
+		--borda: #655448;
+		--texto: #f4e3b2;
+		--texto-suave: #d3bdb1;
+		--titulo: #f4e3b2;
+		--rosa: #e18b82;
+		--rosa-forte: #f0aaa0;
+		--rosa-claro: #492323;
+		--lilas-forte: #d0c59a;
+		--verde: #c4c89a;
 		--sombra: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 30px rgba(0, 0, 0, .35);
 	}
 }
@@ -102,12 +102,12 @@ h3 { font-size: 1.15rem; }
 }
 .botao:hover { transform: translateY(-2px); }
 .botao svg { width: 18px; height: 18px; flex: none; }
-.botao--primario { background: var(--rosa); color: #fff; box-shadow: 0 8px 20px rgba(128, 83, 56, .2); }
+.botao--primario { background: var(--rosa); color: #fff; box-shadow: 0 8px 20px rgba(116, 7, 14, .22); }
 .botao--primario:hover { background: var(--rosa-forte); }
 .botao--contorno { background: var(--superficie); color: var(--titulo); border-color: var(--borda); }
 .botao--contorno:hover { border-color: var(--rosa); color: var(--rosa); }
 .botao--pequeno { padding: 8px 14px; font-size: .88rem; }
-@media (prefers-color-scheme: dark) { .botao--primario { color: #252720; } }
+@media (prefers-color-scheme: dark) { .botao--primario { color: #210b0d; } }
 
 .chip {
 	display: inline-flex; align-items: center; gap: 6px;
@@ -115,7 +115,7 @@ h3 { font-size: 1.15rem; }
 	background: var(--rosa-claro); color: var(--rosa-forte);
 }
 .chip--lilas { background: var(--lilas); color: var(--lilas-forte); }
-.chip--pessego { background: var(--pessego); color: #68432d; }
+.chip--pessego { background: var(--pessego); color: #50382f; }
 .chip--neutro { background: var(--superficie-2); color: var(--texto-suave); font-weight: 500; }
 @media (prefers-color-scheme: dark) { .chip--pessego { color: #ead8c8; } }
 
@@ -182,7 +182,7 @@ h3 { font-size: 1.15rem; }
 .diferencial .icone { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; margin-bottom: 16px; }
 .diferencial .icone svg { width: 26px; height: 26px; }
 .diferencial:nth-child(1) .icone { background: var(--rosa-claro); color: var(--rosa); }
-.diferencial:nth-child(2) .icone { background: var(--pessego); color: #805338; }
+.diferencial:nth-child(2) .icone { background: var(--pessego); color: var(--rosa); }
 .diferencial:nth-child(3) .icone { background: var(--lilas); color: var(--lilas-forte); }
 .diferencial p { color: var(--texto-suave); margin: 0; }
 
