@@ -82,16 +82,12 @@ function cartaoProjeto(t, p) {
 	const corpo = `<div class="projeto-corpo">
 						${selos ? `<div class="projeto-selos">${selos}</div>` : ''}<h3>${esc(p.titulo)}</h3>
 						<p class="projeto-resumo">${esc(resumo)}</p>
-						<div class="projeto-evidencia"><span>${t.rotulos.evidencia}</span><strong>${semTags(p.resultado[0])}</strong></div>
 						<div class="stack">${stackCurta.map((s) => `<span class="chip chip--neutro">${esc(s)}</span>`).join('')}</div>
-						${detalhes}
-						<div class="projeto-links">${p.links.map((l) => linkProjeto(t, l)).join('')}</div>
 					</div>`;
 	const imagem = p.imagem ? `<div class="projeto-imagem"><img src="${prefixo(t)}${p.imagem}" alt="${esc(p.imagemAlt)}" loading="lazy" width="1200" height="540"></div>` : '';
-	return `<article class="cartao projeto${p.imagem ? ' projeto--com-imagem' : ''}" id="projeto-${p.id}">
-					${corpo}
-					${imagem}
-				</article>`;
+	const evidencias = `<div class="projeto-evidencia"><span>${t.rotulos.evidencia}</span><strong>${semTags(p.resultado[0])}</strong></div>`;
+	const acoes = `<div class="projeto-rodape">${detalhes}<div class="projeto-links">${p.links.map((l) => linkProjeto(t, l)).join('')}</div></div>`;
+	return `<article class="cartao projeto${p.imagem ? ' projeto--com-imagem' : ''}" id="projeto-${p.id}">${corpo}${imagem}${evidencias}${acoes}</article>`;
 }
 
 function paginaPortfolio(t) {

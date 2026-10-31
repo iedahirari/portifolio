@@ -59,6 +59,22 @@ const pt = {
   rotulos: { pergunta: 'Pergunta', fiz: 'O que eu fiz', resultado: 'Resultados', evidencia: 'Evidência', detalhes: 'Ver método e resultados', codigo: 'Ver código', online: 'Ver online', jogar: 'Jogar', ler: 'Ler artigo', emAndamento: 'Em andamento', grupo: 'Projeto em grupo' },
   projetos: [
     {
+      id: 'monitorae',
+      titulo: 'MONITORAÊ: para onde vai o dinheiro público de Mogi',
+      resumo: 'Requisitos e coleta automatizada de dados públicos para tornar gastos municipais mais consultáveis.',
+      pergunta: 'Como mostrar, de forma simples para o cidadão, quanto a prefeitura gasta em cada área e quanto recebe do Estado?',
+      fiz: 'Web crawlers em PHP e Node.js que coletam dados do Portal da Transparência da Prefeitura, do site da Câmara e da API do Tesouro Nacional (SICONFI/RREO). Pipeline de ETL com GitHub Actions: a coleta roda toda semana e publica JSON, sem servidor nem banco em produção. Versão acadêmica com MySQL/MariaDB e script Python que converte SQL em JSON. Também cuidei da engenharia de requisitos (requisitos, matriz de rastreabilidade e casos de uso em UML), em equipe de 4 pessoas, na Fatec Mogi das Cruzes.',
+      resultado: [
+        'Gastos por área de 2019 até hoje: <strong>R$ 2,3 bi</strong> em 2025, com Educação e Saúde à frente.',
+        'Repasses do Estado (ICMS e IPVA) e salários de <strong>5,6 mil</strong> servidores.',
+        'Corrigi um bug do crawler original que apagava os centavos dos salários.',
+      ],
+      stack: ['Node.js', 'PHP', 'MySQL', 'Python', 'ETL', 'GitHub Actions', 'UML'],
+      imagem: 'assets/img/monitorae.png',
+      imagemAlt: 'Página de relatórios do MONITORAÊ com gastos por área de governo',
+      links: [{ tipo: 'online', url: links.monitoraeSite }, { tipo: 'codigo', url: links.monitorae }],
+    },
+    {
       id: 'olist',
       titulo: 'E-commerce Olist: atraso na entrega × satisfação',
       resumo: 'Análise de cerca de 100 mil pedidos para entender como prazo de entrega e avaliações se relacionam.',
@@ -90,22 +106,6 @@ const pt = {
       imagem: 'assets/img/varejo-sql.png',
       imagemAlt: 'Dashboard de varejo com receita mensal, retenção por coorte, clientes RFM e devoluções',
       links: [{ tipo: 'codigo', url: links.varejoSql }],
-    },
-    {
-      id: 'monitorae',
-      titulo: 'MONITORAÊ: para onde vai o dinheiro público de Mogi',
-      resumo: 'Requisitos e coleta automatizada de dados públicos para tornar gastos municipais mais consultáveis.',
-      pergunta: 'Como mostrar, de forma simples para o cidadão, quanto a prefeitura gasta em cada área e quanto recebe do Estado?',
-      fiz: 'Web crawlers em PHP e Node.js que coletam dados do Portal da Transparência da Prefeitura, do site da Câmara e da API do Tesouro Nacional (SICONFI/RREO). Pipeline de ETL com GitHub Actions: a coleta roda toda semana e publica JSON, sem servidor nem banco em produção. Versão acadêmica com MySQL/MariaDB e script Python que converte SQL em JSON. Também cuidei da engenharia de requisitos (requisitos, matriz de rastreabilidade e casos de uso em UML), em equipe de 4 pessoas, na Fatec Mogi das Cruzes.',
-      resultado: [
-        'Gastos por área de 2019 até hoje: <strong>R$ 2,3 bi</strong> em 2025, com Educação e Saúde à frente.',
-        'Repasses do Estado (ICMS e IPVA) e salários de <strong>5,6 mil</strong> servidores.',
-        'Corrigi um bug do crawler original que apagava os centavos dos salários.',
-      ],
-      stack: ['Node.js', 'PHP', 'MySQL', 'Python', 'ETL', 'GitHub Actions', 'UML'],
-      imagem: 'assets/img/monitorae.png',
-      imagemAlt: 'Página de relatórios do MONITORAÊ com gastos por área de governo',
-      links: [{ tipo: 'online', url: links.monitoraeSite }, { tipo: 'codigo', url: links.monitorae }],
     },
     {
       id: 'webagri', emAndamento: true, grupo: true,
@@ -297,6 +297,22 @@ const en = {
   rotulos: { pergunta: 'Question', fiz: 'What I did', resultado: 'Results', evidencia: 'Evidence', detalhes: 'View method and results', codigo: 'View code', online: 'Live site', jogar: 'Play', ler: 'Read paper', emAndamento: 'In progress', grupo: 'Team project' },
   projetos: [
     {
+      id: 'monitorae',
+      titulo: 'MONITORAÊ: where public money goes in Mogi das Cruzes',
+      resumo: 'Requirements and automated public-data collection to make city spending easier to explore.',
+      pergunta: 'How can citizens easily see how much the city spends in each area and how much it receives from the State?',
+      fiz: 'Web crawlers in PHP and Node.js that collect data from the city transparency portal, the city council site and the Brazilian Treasury API (SICONFI/RREO). ETL pipeline on GitHub Actions: collection runs weekly and publishes JSON, with no server or database in production. Academic version with MySQL/MariaDB and a Python script that converts SQL to JSON. I also handled requirements engineering (requirements, traceability matrix and UML use cases) in a team of 4 at Fatec Mogi das Cruzes.',
+      resultado: [
+        'Spending by area from 2019 to today: <strong>R$ 2.3 billion</strong> in 2025, led by Education and Health.',
+        'State transfers (ICMS and IPVA taxes) and salaries of <strong>5.6k</strong> public employees.',
+        'Fixed a bug in the original crawler that dropped the cents from salaries.',
+      ],
+      stack: ['Node.js', 'PHP', 'MySQL', 'Python', 'ETL', 'GitHub Actions', 'UML'],
+      imagem: 'assets/img/monitorae.png',
+      imagemAlt: 'MONITORAÊ reports page showing spending by government area',
+      links: [{ tipo: 'online', url: links.monitoraeSite }, { tipo: 'codigo', url: links.monitorae }],
+    },
+    {
       id: 'olist',
       titulo: 'Olist e-commerce: late deliveries × customer satisfaction',
       resumo: 'Analysis of about 100k orders to understand how delivery times relate to customer ratings.',
@@ -328,22 +344,6 @@ const en = {
       imagem: 'assets/img/varejo-sql.png',
       imagemAlt: 'Retail dashboard with monthly revenue, cohort retention, RFM customers and returns',
       links: [{ tipo: 'codigo', url: links.varejoSql }],
-    },
-    {
-      id: 'monitorae',
-      titulo: 'MONITORAÊ: where public money goes in Mogi das Cruzes',
-      resumo: 'Requirements and automated public-data collection to make city spending easier to explore.',
-      pergunta: 'How can citizens easily see how much the city spends in each area and how much it receives from the State?',
-      fiz: 'Web crawlers in PHP and Node.js that collect data from the city transparency portal, the city council site and the Brazilian Treasury API (SICONFI/RREO). ETL pipeline on GitHub Actions: collection runs weekly and publishes JSON, with no server or database in production. Academic version with MySQL/MariaDB and a Python script that converts SQL to JSON. I also handled requirements engineering (requirements, traceability matrix and UML use cases) in a team of 4 at Fatec Mogi das Cruzes.',
-      resultado: [
-        'Spending by area from 2019 to today: <strong>R$ 2.3 billion</strong> in 2025, led by Education and Health.',
-        'State transfers (ICMS and IPVA taxes) and salaries of <strong>5.6k</strong> public employees.',
-        'Fixed a bug in the original crawler that dropped the cents from salaries.',
-      ],
-      stack: ['Node.js', 'PHP', 'MySQL', 'Python', 'ETL', 'GitHub Actions', 'UML'],
-      imagem: 'assets/img/monitorae.png',
-      imagemAlt: 'MONITORAÊ reports page showing spending by government area',
-      links: [{ tipo: 'online', url: links.monitoraeSite }, { tipo: 'codigo', url: links.monitorae }],
     },
     {
       id: 'webagri', emAndamento: true, grupo: true,
