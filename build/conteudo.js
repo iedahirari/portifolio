@@ -154,15 +154,15 @@ const pt = {
   ],
   habilidades: {
     titulo: 'Competências',
-    intro: 'Competências demonstradas em projetos acadêmicos e na experiência em operações.',
-    usoTitulo: 'Negócios, processos e tecnologia',
+    intro: 'Competências aplicadas na experiência em operações, em projetos acadêmicos e em cursos concluídos.',
+    usoTitulo: 'Negócios, processos, dados e sistemas',
     estudoTitulo: 'Estudando agora',
     grupos: [
-      { titulo: 'Negócios & processos', itens: ['Levantamento e organização de requisitos (projeto acadêmico)', 'Matriz de rastreabilidade e casos de uso UML', 'Modelagem de processos BPMN com Bizagi', 'Indicadores, metas e funil de vendas', 'Curva ABC e giro de estoque'] },
-      { titulo: 'Sistemas & dados', itens: ['SQL (joins, agregações, subconsultas)', 'MySQL e modelagem relacional', 'PHP e Node.js em projetos', 'Web scraping e APIs REST', 'Git e GitHub'] },
-      { titulo: 'Relatórios & BI', itens: ['Excel (tabelas dinâmicas e PROCV/XLOOKUP)', 'Power BI (DAX, Power Query)', 'Modelagem Star Schema', 'Python (pandas, NumPy)', 'Jupyter, Matplotlib e Seaborn'] },
+      { titulo: 'Negócios, requisitos & processos', itens: ['Levantamento e documentação de requisitos funcionais e não funcionais (MONITORAÊ)', 'Mapeamento de stakeholders, matriz de rastreabilidade e casos de uso UML', 'Modelagem de processos BPMN com Bizagi (curso concluído)', 'KPIs, metas, funil comercial, Curva ABC e giro de estoque', 'Atendimento e orientação individual em inclusão digital (voluntariado)'] },
+      { titulo: 'Análise de dados & BI', itens: ['SQL com DuckDB e MySQL/MariaDB: junções, CTEs, agregações e funções de janela', 'Power BI: Power Query, DAX, dashboards e modelo Star Schema', 'Excel: tabelas dinâmicas e PROCV/XLOOKUP', 'Qualidade de dados e análise de varejo: Curva ABC, RFM, coortes e devoluções', 'Looker Studio'] },
+      { titulo: 'Sistemas, automação & programação', itens: ['Python para análise: pandas, NumPy, Jupyter, Matplotlib e Seaborn', 'ETL, web scraping, APIs REST e JSON', 'Git/GitHub e automação de coleta com GitHub Actions', 'PHP e Node.js em crawlers e aplicações web', 'Machine learning em projeto acadêmico: Árvore de Decisão, Random Forest e XGBoost'] },
     ],
-    estudo: ['Machine Learning com scikit-learn', 'Estatística inferencial', 'PostgreSQL'],
+    estudo: ['Estatística inferencial', 'PostgreSQL'],
   },
   trajetoria: {
     titulo: 'Trajetória',
@@ -386,15 +386,15 @@ const en = {
   ],
   habilidades: {
     titulo: 'Skills',
-    intro: 'Skills demonstrated in academic projects and commercial operations experience.',
-    usoTitulo: 'Business, processes and technology',
+    intro: 'Skills applied in commercial operations, academic projects and completed courses.',
+    usoTitulo: 'Business, processes, data and systems',
     estudoTitulo: 'Currently learning',
     grupos: [
-      { titulo: 'Business & processes', itens: ['Requirements gathering and organization (academic project)', 'Traceability matrix and UML use cases', 'BPMN process modeling with Bizagi', 'Sales indicators, targets and funnel', 'ABC analysis and inventory turnover'] },
-      { titulo: 'Systems & data', itens: ['SQL (joins, aggregations, subqueries)', 'MySQL and relational modeling', 'PHP and Node.js in projects', 'Web scraping and REST APIs', 'Git and GitHub'] },
-      { titulo: 'Reporting & BI', itens: ['Excel (pivot tables and VLOOKUP/XLOOKUP)', 'Power BI (DAX, Power Query)', 'Star schema modeling', 'Python (pandas, NumPy)', 'Jupyter, Matplotlib and Seaborn'] },
+      { titulo: 'Business analysis, requirements & processes', itens: ['Gathering and documenting functional and non-functional requirements (MONITORAÊ)', 'Stakeholder mapping, traceability matrix and UML use cases', 'BPMN process modeling with Bizagi (completed course)', 'Commercial KPIs, targets, sales funnel, ABC analysis and inventory turnover', 'One-to-one digital inclusion and user guidance (volunteer work)'] },
+      { titulo: 'Data analysis & BI', itens: ['SQL with DuckDB and MySQL/MariaDB: joins, CTEs, aggregations and window functions', 'Power BI: Power Query, DAX, dashboards and star schema', 'Excel: pivot tables and VLOOKUP/XLOOKUP', 'Data quality and retail analytics: ABC, RFM, cohorts and returns', 'Looker Studio'] },
+      { titulo: 'Systems, automation & programming', itens: ['Python for analysis: pandas, NumPy, Jupyter, Matplotlib and Seaborn', 'ETL, web scraping, REST APIs and JSON', 'Git/GitHub and automated data collection with GitHub Actions', 'PHP and Node.js in web crawlers and applications', 'Machine learning in an academic team project: Decision Tree, Random Forest and XGBoost'] },
     ],
-    estudo: ['Machine Learning with scikit-learn', 'Inferential statistics', 'PostgreSQL'],
+    estudo: ['Inferential statistics', 'PostgreSQL'],
   },
   trajetoria: {
     titulo: 'Experience',
