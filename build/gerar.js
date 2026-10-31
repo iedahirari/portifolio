@@ -80,7 +80,7 @@ function cartaoProjeto(t, p) {
 						<div class="projeto-links">${p.links.map((l) => linkProjeto(t, l)).join('')}</div>
 					</div>`;
 	const imagem = p.imagem ? `<div class="projeto-imagem"><img src="${prefixo(t)}${p.imagem}" alt="${esc(p.imagemAlt)}" loading="lazy" width="1200" height="540"></div>` : '';
-	return `<article class="cartao projeto" id="projeto-${p.id}">
+	return `<article class="cartao projeto${p.imagem ? ' projeto--com-imagem' : ''}" id="projeto-${p.id}">
 					${corpo}
 					${imagem}
 				</article>`;
@@ -102,7 +102,7 @@ function paginaPortfolio(t) {
 <head>
 	${cabecaComum(t, t.meta.titulo, t.meta.descricao, urlPagina, [['pt-BR', ''], ['en', 'en/'], ['x-default', '']])}
 	<script>document.documentElement.classList.add('js');</script>
-	<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-cards-loader">
+	<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-horizontal-loader">
 	<script type="application/ld+json">${JSON.stringify(pessoa)}</script>
 </head>
 <body>

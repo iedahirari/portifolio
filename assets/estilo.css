@@ -187,9 +187,10 @@ h3 { font-size: 1.15rem; }
 .diferencial p { color: var(--texto-suave); margin: 0; }
 
 /* Projetos */
-.projetos { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.projetos { display: grid; gap: 24px; }
 .projeto { display: grid; grid-template-columns: 1fr; align-content: start; overflow: hidden; padding: 0; }
-.projeto-imagem { background: var(--superficie-2); display: flex; align-items: center; justify-content: center; padding: 20px; border-top: 1px solid var(--borda); }
+.projeto--com-imagem { grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); align-items: stretch; }
+.projeto-imagem { background: var(--superficie-2); display: flex; align-items: center; justify-content: center; padding: 20px; border-left: 1px solid var(--borda); }
 .projeto-imagem img { width: 100%; height: auto; border-radius: var(--raio-pequeno); box-shadow: var(--sombra); background: #fff; }
 .projeto-corpo { padding: 28px; display: flex; flex-direction: column; gap: 14px; }
 .projeto-selos { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -204,8 +205,7 @@ h3 { font-size: 1.15rem; }
 .resultados strong { color: var(--titulo); }
 .stack { display: flex; flex-wrap: wrap; gap: 6px; }
 .projeto-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 6px; }
-@media (max-width: 960px) { .projetos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 640px) { .projetos { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .projeto--com-imagem { grid-template-columns: 1fr; } .projeto-imagem { border-left: 0; border-top: 1px solid var(--borda); } }
 
 /* Habilidades */
 .habilidade h3 { display: flex; align-items: center; gap: 10px; }
