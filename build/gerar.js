@@ -104,7 +104,7 @@ function paginaPortfolio(t) {
 <html lang="${t.lang}">
 <head>
 	${cabecaComum(t, t.meta.titulo, t.meta.descricao, urlPagina, [['pt-BR', ''], ['en', 'en/'], ['x-default', '']])}
-	<link rel="stylesheet" href="${pre}assets/estilo.css?v=42196a6">
+	<link rel="stylesheet" href="${pre}assets/estilo.css?v=e30726e">
 	<script type="application/ld+json">${JSON.stringify(pessoa)}</script>
 </head>
 <body>

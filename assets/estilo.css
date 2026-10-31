@@ -172,7 +172,7 @@ h3 { font-size: 1.15rem; }
 .projeto { display: grid; grid-template-columns: 1fr; overflow: hidden; padding: 0; }
 .projeto--destaque { grid-template-columns: 1fr 1fr; }
 @media (max-width: 880px) { .projeto--destaque { grid-template-columns: 1fr; } }
-.projeto-imagem { background: var(--superficie-2); display: flex; align-items: flex-start; justify-content: center; padding: 28px; border-left: 1px solid var(--borda); }
+.projeto-imagem { background: var(--superficie-2); display: flex; align-items: center; justify-content: center; padding: 28px; border-left: 1px solid var(--borda); }
 .projeto-imagem img { width: 100%; height: auto; border-radius: var(--raio-pequeno); box-shadow: var(--sombra); background: #fff; }
 @media (max-width: 880px) { .projeto-imagem { order: -1; border-left: 0; border-bottom: 1px solid var(--borda); } }
 .projeto-corpo { padding: 28px; display: flex; flex-direction: column; gap: 14px; }
