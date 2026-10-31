@@ -1,6 +1,8 @@
 # Portfólio · Ieda Oliveira
 
-**Análise de Dados & BI** · estudante de Matemática (IFSP) e Ciência da Computação, em transição de carreira.
+**Análise de Negócios, Requisitos e Processos** · estudante de Ciência da Computação e Licenciatura em Matemática, em transição para tecnologia. Busco oportunidades **júnior ou de estágio** em Análise de Negócios, Análise de Requisitos e Processos. Também considero Suporte Funcional e Implantação de Sistemas; Dados/BI com foco em operações é uma frente complementar.
+
+Tenho mais de seis anos de experiência em gestão comercial e operações no varejo, com acompanhamento de indicadores, metas, estoque e relatórios para apoiar decisões. Em projetos acadêmicos, participei do levantamento e organização de requisitos, modelagem e desenvolvimento em equipe. Concluí **Process Modeling — Bizagi (BPMN), outubro de 2026**.
 
 | | Português | English |
 | --- | --- | --- |
@@ -12,14 +14,14 @@ Os currículos têm uma coluna e texto real (não imagem), para que sistemas de 
 
 ## Projetos em destaque
 
-- **[E-commerce Olist](https://github.com/iedahirari/dashboard-ecommerce-olist):** análise de 100 mil pedidos mostrando que entregas atrasadas derrubam a nota média de 4,29 para 2,27 (Python, pandas, Power BI).
-- **[MONITORAÊ](https://github.com/iedahirari/Projeto-de-Engenharia-de-Software-2---ES2):** crawlers que coletam dados públicos do Tesouro Nacional e da Prefeitura de Mogi das Cruzes, atualizados toda semana com GitHub Actions.
-- **[Preditor de falhas em redes](https://github.com/ZorahSai/Projeto-WebAgriculture-):** árvore de decisão treinada com medições do RIPE Atlas (em grupo, em andamento).
+- **[MONITORAÊ](https://github.com/iedahirari/Projeto-de-Engenharia-de-Software-2---ES2):** projeto em equipe com coleta de dados públicos do Tesouro Nacional e da Prefeitura de Mogi das Cruzes, atualizados semanalmente com GitHub Actions. Incluiu levantamento e organização de requisitos, matriz de rastreabilidade e casos de uso UML.
+- **[E-commerce Olist](https://github.com/iedahirari/dashboard-ecommerce-olist):** análise de cerca de 100 mil pedidos; identificou que pedidos atrasados representavam 7% do total e concentravam 32% das avaliações negativas (Python, pandas, Power BI).
 - **[Horta Limpa](https://github.com/iedahirari/Horta-Limpa):** pesquisa com consumidores e dados da Anvisa que viraram um jogo educativo.
+- **[Preditor de falhas em redes](https://github.com/ZorahSai/Projeto-WebAgriculture-):** projeto em grupo, em andamento, que explora árvore de decisão com medições do RIPE Atlas.
 
 ## Como editar
 
-Todo o texto (nos dois idiomas) fica em [`build/conteudo.js`](build/conteudo.js). Depois de editar, gere as páginas de novo:
+O conteúdo do site nos dois idiomas fica em [`build/conteudo.js`](build/conteudo.js). Depois de editar, gere as páginas de novo:
 
 ```bash
 node build/gerar.js
