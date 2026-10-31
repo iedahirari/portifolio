@@ -35,8 +35,8 @@
 	:root {
 		--fundo: #210b0d;
 		--superficie: #310e10;
-		--superficie-2: #492b2d;
-		--pessego: #503333;
+		--superficie-2: #432226;
+		--pessego: #523238;
 		--lilas: #493239;
 		--borda: #65484a;
 		--texto: #f4e3b2;
@@ -193,7 +193,7 @@ h3 { font-size: 1.15rem; }
 .projeto-selos { display: flex; flex-wrap: wrap; gap: 8px; }
 .projeto h3 { font-family: var(--fonte-titulo); font-weight: 400; font-size: 1.55rem; margin: 0; }
 .projeto-resumo { margin: 0; color: var(--texto-suave); }
-.projeto-evidencia { grid-area: evidencia; align-self: start; display: grid; gap: 3px; margin: 0 24px 18px; padding: 10px 12px; border-left: 3px solid var(--rosa-vivo); background: var(--superficie-2); border-radius: 0 var(--raio-pequeno) var(--raio-pequeno) 0; }
+.projeto-evidencia { grid-area: evidencia; align-self: start; display: grid; gap: 3px; margin: 0 24px 18px; padding: 10px 12px; border-left: 3px solid var(--rosa-vivo); background: var(--pessego); border-radius: 0 var(--raio-pequeno) var(--raio-pequeno) 0; }
 .projeto-evidencia span { color: var(--texto-suave); font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .projeto-evidencia strong { color: var(--titulo); font-size: .9rem; line-height: 1.45; }
 .projeto-imagem { grid-area: imagem; min-width: 0; background: var(--superficie-2); display: flex; align-items: center; justify-content: center; padding: 20px; border-left: 1px solid var(--borda); }
