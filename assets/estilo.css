@@ -168,13 +168,10 @@ h3 { font-size: 1.15rem; }
 .diferencial p { color: var(--texto-suave); margin: 0; }
 
 /* Projetos */
-.projetos { display: grid; gap: 24px; }
-.projeto { display: grid; grid-template-columns: 1fr; overflow: hidden; padding: 0; }
-.projeto--destaque { grid-template-columns: 1fr 1fr; }
-@media (max-width: 880px) { .projeto--destaque { grid-template-columns: 1fr; } }
-.projeto-imagem { background: var(--superficie-2); display: flex; align-items: center; justify-content: center; padding: 28px; border-left: 1px solid var(--borda); }
+.projetos { display: grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.projeto { display: grid; grid-template-columns: 1fr; align-content: start; overflow: hidden; padding: 0; }
+.projeto-imagem { background: var(--superficie-2); display: flex; align-items: center; justify-content: center; padding: 20px; border-top: 1px solid var(--borda); }
 .projeto-imagem img { width: 100%; height: auto; border-radius: var(--raio-pequeno); box-shadow: var(--sombra); background: #fff; }
-@media (max-width: 880px) { .projeto-imagem { order: -1; border-left: 0; border-bottom: 1px solid var(--borda); } }
 .projeto-corpo { padding: 28px; display: flex; flex-direction: column; gap: 14px; }
 .projeto-selos { display: flex; flex-wrap: wrap; gap: 8px; }
 .projeto h3 { font-family: var(--fonte-titulo); font-weight: 400; font-size: 1.55rem; margin: 0; }
@@ -188,8 +185,8 @@ h3 { font-size: 1.15rem; }
 .resultados strong { color: var(--titulo); }
 .stack { display: flex; flex-wrap: wrap; gap: 6px; }
 .projeto-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 6px; }
-.projetos-menores { display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-@media (max-width: 760px) { .projetos-menores { grid-template-columns: 1fr; } }
+@media (max-width: 960px) { .projetos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .projetos { grid-template-columns: 1fr; } }
 
 /* Habilidades */
 .habilidade h3 { display: flex; align-items: center; gap: 10px; }

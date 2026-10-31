@@ -52,7 +52,7 @@ const pt = {
   },
   projetosTitulo: 'Projetos',
   projetosIntro: 'Projetos acadêmicos e de portfólio que conectam necessidades, requisitos, sistemas e análise de dados.',
-  rotulos: { pergunta: 'Pergunta', fiz: 'O que eu fiz', resultado: 'Resultado', codigo: 'Ver código', online: 'Ver online', jogar: 'Jogar', ler: 'Ler artigo', emAndamento: 'Em andamento', destaque: 'Destaque', grupo: 'Projeto em grupo' },
+  rotulos: { pergunta: 'Pergunta', fiz: 'O que eu fiz', resultado: 'Resultado', codigo: 'Ver código', online: 'Ver online', jogar: 'Jogar', ler: 'Ler artigo', emAndamento: 'Em andamento', grupo: 'Projeto em grupo' },
   projetos: [
     {
       id: 'olist',
@@ -71,7 +71,7 @@ const pt = {
       links: [{ tipo: 'codigo', url: links.olist }],
     },
     {
-      id: 'monitorae', destaque: true,
+      id: 'monitorae',
       titulo: 'MONITORAÊ: para onde vai o dinheiro público de Mogi',
       pergunta: 'Como mostrar, de forma simples para o cidadão, quanto a prefeitura gasta em cada área e quanto recebe do Estado?',
       fiz: 'Web crawlers em PHP e Node.js que coletam dados do Portal da Transparência da Prefeitura, do site da Câmara e da API do Tesouro Nacional (SICONFI/RREO). Pipeline de ETL com GitHub Actions: a coleta roda toda semana e publica JSON, sem servidor nem banco em produção. Versão acadêmica com MySQL/MariaDB e script Python que converte SQL em JSON. Também cuidei da engenharia de requisitos (requisitos, matriz de rastreabilidade e casos de uso em UML), em equipe de 4 pessoas, na Fatec Mogi das Cruzes.',
@@ -255,7 +255,7 @@ const en = {
   },
   projetosTitulo: 'Projects',
   projetosIntro: 'Academic and portfolio projects connecting business needs, requirements, systems and data analysis.',
-  rotulos: { pergunta: 'Question', fiz: 'What I did', resultado: 'Result', codigo: 'View code', online: 'Live site', jogar: 'Play', ler: 'Read paper', emAndamento: 'In progress', destaque: 'Featured', grupo: 'Team project' },
+  rotulos: { pergunta: 'Question', fiz: 'What I did', resultado: 'Result', codigo: 'View code', online: 'Live site', jogar: 'Play', ler: 'Read paper', emAndamento: 'In progress', grupo: 'Team project' },
   projetos: [
     {
       id: 'olist',
@@ -274,7 +274,7 @@ const en = {
       links: [{ tipo: 'codigo', url: links.olist }],
     },
     {
-      id: 'monitorae', destaque: true,
+      id: 'monitorae',
       titulo: 'MONITORAÊ: where public money goes in Mogi das Cruzes',
       pergunta: 'How can citizens easily see how much the city spends in each area and how much it receives from the State?',
       fiz: 'Web crawlers in PHP and Node.js that collect data from the city transparency portal, the city council site and the Brazilian Treasury API (SICONFI/RREO). ETL pipeline on GitHub Actions: collection runs weekly and publishes JSON, with no server or database in production. Academic version with MySQL/MariaDB and a Python script that converts SQL to JSON. I also handled requirements engineering (requirements, traceability matrix and UML use cases) in a team of 4 at Fatec Mogi das Cruzes.',

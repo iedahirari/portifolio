@@ -68,7 +68,6 @@ function linkProjeto(t, l) {
 
 function cartaoProjeto(t, p) {
 	const selos = [
-		p.destaque && `<span class="chip">${t.rotulos.destaque}</span>`,
 		p.emAndamento && `<span class="chip chip--pessego">${t.rotulos.emAndamento}</span>`,
 		p.grupo && `<span class="chip chip--lilas">${t.rotulos.grupo}</span>`,
 	].filter(Boolean).join('');
@@ -81,7 +80,7 @@ function cartaoProjeto(t, p) {
 						<div class="projeto-links">${p.links.map((l) => linkProjeto(t, l)).join('')}</div>
 					</div>`;
 	const imagem = p.imagem ? `<div class="projeto-imagem"><img src="${prefixo(t)}${p.imagem}" alt="${esc(p.imagemAlt)}" loading="lazy" width="1200" height="540"></div>` : '';
-	return `<article class="cartao projeto${p.destaque ? ' projeto--destaque' : ''}" id="projeto-${p.id}">
+	return `<article class="cartao projeto" id="projeto-${p.id}">
 					${corpo}
 					${imagem}
 				</article>`;
@@ -89,8 +88,6 @@ function cartaoProjeto(t, p) {
 
 function paginaPortfolio(t) {
 	const pre = prefixo(t);
-	const destaques = t.projetos.filter((p) => p.destaque);
-	const outros = t.projetos.filter((p) => !p.destaque);
 	const whats = `${contato.whatsapp}?text=${encodeURIComponent(t.contatoSecao.mensagemWhats)}`;
 	const urlPagina = t.lang === 'en' ? 'en/' : '';
 	const pessoa = {
@@ -104,7 +101,7 @@ function paginaPortfolio(t) {
 <html lang="${t.lang}">
 <head>
 	${cabecaComum(t, t.meta.titulo, t.meta.descricao, urlPagina, [['pt-BR', ''], ['en', 'en/'], ['x-default', '']])}
-	<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-ux1">
+	<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-cards">
 	<script type="application/ld+json">${JSON.stringify(pessoa)}</script>
 </head>
 <body>
@@ -178,10 +175,7 @@ function paginaPortfolio(t) {
 					<p>${esc(t.projetosIntro)}</p>
 				</div>
 				<div class="projetos">
-					${destaques.map((p) => cartaoProjeto(t, p)).join('\n\t\t\t\t\t')}
-					<div class="projetos-menores">
-						${outros.map((p) => cartaoProjeto(t, p)).join('\n\t\t\t\t\t\t')}
-					</div>
+					${t.projetos.map((p) => cartaoProjeto(t, p)).join('\n\t\t\t\t\t')}
 				</div>
 			</div>
 		</section>
