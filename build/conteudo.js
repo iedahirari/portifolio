@@ -56,11 +56,12 @@ const pt = {
   },
   projetosTitulo: 'Projetos',
   projetosIntro: 'Projetos acadêmicos e de portfólio que conectam necessidades, requisitos, sistemas e análise de dados.',
-  rotulos: { pergunta: 'Pergunta', fiz: 'O que eu fiz', resultado: 'Resultado', codigo: 'Ver código', online: 'Ver online', jogar: 'Jogar', ler: 'Ler artigo', emAndamento: 'Em andamento', grupo: 'Projeto em grupo' },
+  rotulos: { pergunta: 'Pergunta', fiz: 'O que eu fiz', resultado: 'Resultados', evidencia: 'Evidência', detalhes: 'Ver método e resultados', codigo: 'Ver código', online: 'Ver online', jogar: 'Jogar', ler: 'Ler artigo', emAndamento: 'Em andamento', grupo: 'Projeto em grupo' },
   projetos: [
     {
       id: 'olist',
       titulo: 'E-commerce Olist: atraso na entrega × satisfação',
+      resumo: 'Análise de cerca de 100 mil pedidos para entender como prazo de entrega e avaliações se relacionam.',
       pergunta: 'O atraso na entrega derruba a satisfação do cliente? Onde vale a pena agir primeiro?',
       fiz: 'Análise exploratória em Python de cerca de 100 mil pedidos reais (Olist, 2016–2018), juntando 6 tabelas relacionais, com checagem de qualidade, engenharia de atributos (tempo de entrega, dias de atraso), estatística descritiva e correlação de Pearson. Dashboard em Power BI com modelo Star Schema, Power Query e medidas DAX.',
       resultado: [
@@ -77,6 +78,7 @@ const pt = {
     {
       id: 'varejo-sql',
       titulo: 'Análise de varejo com SQL: clientes, produtos e retenção',
+      resumo: 'Mais de 1 milhão de linhas analisadas para investigar receita, clientes, retenção e devoluções.',
       pergunta: 'Quais produtos sustentam a receita e quais clientes precisam de atenção?',
       fiz: 'Análise de mais de 1 milhão de linhas do dataset Online Retail II (2009–2011), com DuckDB e SQL. Fiz diagnóstico e limpeza dos dados, Curva ABC, segmentação RFM, análise de coortes e devoluções. Exportei o modelo em estrela e montei um dashboard executivo no Power BI.',
       resultado: [
@@ -92,6 +94,7 @@ const pt = {
     {
       id: 'monitorae',
       titulo: 'MONITORAÊ: para onde vai o dinheiro público de Mogi',
+      resumo: 'Requisitos e coleta automatizada de dados públicos para tornar gastos municipais mais consultáveis.',
       pergunta: 'Como mostrar, de forma simples para o cidadão, quanto a prefeitura gasta em cada área e quanto recebe do Estado?',
       fiz: 'Web crawlers em PHP e Node.js que coletam dados do Portal da Transparência da Prefeitura, do site da Câmara e da API do Tesouro Nacional (SICONFI/RREO). Pipeline de ETL com GitHub Actions: a coleta roda toda semana e publica JSON, sem servidor nem banco em produção. Versão acadêmica com MySQL/MariaDB e script Python que converte SQL em JSON. Também cuidei da engenharia de requisitos (requisitos, matriz de rastreabilidade e casos de uso em UML), em equipe de 4 pessoas, na Fatec Mogi das Cruzes.',
       resultado: [
@@ -107,6 +110,7 @@ const pt = {
     {
       id: 'webagri', emAndamento: true, grupo: true,
       titulo: 'Preditor de degradação de rede com árvore de decisão',
+      resumo: 'Projeto em equipe que classifica medições como OK, RISCO ou FALHA comparando cada fluxo com seu histórico.',
       pergunta: 'Dá para saber que um ponto da internet está degradando antes que ele caia, comparando cada medição com o comportamento normal do próprio fluxo?',
       fiz: 'Coleta de medições reais de ping da API do RIPE Atlas (97 fluxos entre 20 destinos e 5 origens), rótulo de cada medição como OK, RISCO ou FALHA pelo desvio em relação ao próprio histórico, engenharia de atributos (z-score robusto, aumento de RTT, jitter, perda de pacotes, janelas móveis) e treino de uma árvore de decisão com corte temporal entre treino, validação e teste. Projeto integrador de 3 disciplinas, em Scrum, com equipe de 5 pessoas. Minha parte: coleta, limpeza, rotulagem e treino.',
       resultado: [
@@ -119,6 +123,7 @@ const pt = {
     {
       id: 'artigo-redes', grupo: true,
       titulo: 'Previsão de degradação de rede: comparação de modelos',
+      resumo: 'Estudo complementar que compara modelos para prever a qualidade de 92 fluxos com 12 minutos de antecedência.',
       pergunta: 'Árvore de Decisão, Random Forest ou XGBoost conseguem antecipar uma falha de rede?',
       fiz: 'Estudo em equipe com dados públicos do RIPE Atlas: participei da comparação entre Árvore de Decisão, Random Forest e XGBoost para prever, com 12 minutos de antecedência, a classe de qualidade de 92 fluxos. O trabalho usou separação temporal entre treino, validação e teste e comparou os resultados com a persistência.',
       resultado: [
@@ -133,6 +138,7 @@ const pt = {
     {
       id: 'horta', grupo: true,
       titulo: 'Horta Limpa: dados de pesquisa viram jogo educativo',
+      resumo: 'Pesquisa local sobre agrotóxicos transformada em um jogo educativo de navegador.',
       pergunta: 'Por que as pessoas se preocupam com agrotóxicos, mas quase não pensam neles na hora de comprar?',
       fiz: 'Questionário com 57 moradores de Mogi das Cruzes cruzado com os dados do programa PARA da Anvisa. Os achados viraram as regras de um jogo de navegador em que o jogador passa um ano cultivando uma horta, com cada mecânica ligada a uma base pedagógica (Piaget, Paulo Freire). Feito em JavaScript puro com mundo isométrico em Canvas 2D, funciona no computador e no celular. Projeto de extensão do Centro Universitário Braz Cubas.',
       resultado: [
@@ -288,11 +294,12 @@ const en = {
   },
   projetosTitulo: 'Projects',
   projetosIntro: 'Academic and portfolio projects connecting business needs, requirements, systems and data analysis.',
-  rotulos: { pergunta: 'Question', fiz: 'What I did', resultado: 'Result', codigo: 'View code', online: 'Live site', jogar: 'Play', ler: 'Read paper', emAndamento: 'In progress', grupo: 'Team project' },
+  rotulos: { pergunta: 'Question', fiz: 'What I did', resultado: 'Results', evidencia: 'Evidence', detalhes: 'View method and results', codigo: 'View code', online: 'Live site', jogar: 'Play', ler: 'Read paper', emAndamento: 'In progress', grupo: 'Team project' },
   projetos: [
     {
       id: 'olist',
       titulo: 'Olist e-commerce: late deliveries × customer satisfaction',
+      resumo: 'Analysis of about 100k orders to understand how delivery times relate to customer ratings.',
       pergunta: 'Do late deliveries hurt customer satisfaction? Where should the company act first?',
       fiz: 'Exploratory analysis in Python of about 100k real orders (Olist, 2016–2018), joining 6 relational tables, with data quality checks, feature engineering (delivery time, days late), descriptive statistics and Pearson correlation. Power BI dashboard with a star schema, Power Query and DAX measures.',
       resultado: [
@@ -309,6 +316,7 @@ const en = {
     {
       id: 'varejo-sql',
       titulo: 'Retail analysis with SQL: customers, products and retention',
+      resumo: 'Over 1 million rows analyzed to explore revenue, customers, retention and returns.',
       pergunta: 'Which products drive revenue, and which customers need attention?',
       fiz: 'Analysis of over 1 million rows from the Online Retail II dataset (2009–2011) using DuckDB and SQL. I diagnosed and cleaned the data, then built ABC analysis, RFM customer segments, cohort retention and returns analysis. I exported a star schema and built an executive Power BI dashboard.',
       resultado: [
@@ -324,6 +332,7 @@ const en = {
     {
       id: 'monitorae',
       titulo: 'MONITORAÊ: where public money goes in Mogi das Cruzes',
+      resumo: 'Requirements and automated public-data collection to make city spending easier to explore.',
       pergunta: 'How can citizens easily see how much the city spends in each area and how much it receives from the State?',
       fiz: 'Web crawlers in PHP and Node.js that collect data from the city transparency portal, the city council site and the Brazilian Treasury API (SICONFI/RREO). ETL pipeline on GitHub Actions: collection runs weekly and publishes JSON, with no server or database in production. Academic version with MySQL/MariaDB and a Python script that converts SQL to JSON. I also handled requirements engineering (requirements, traceability matrix and UML use cases) in a team of 4 at Fatec Mogi das Cruzes.',
       resultado: [
@@ -339,6 +348,7 @@ const en = {
     {
       id: 'webagri', emAndamento: true, grupo: true,
       titulo: 'Network degradation predictor with a decision tree',
+      resumo: 'Team project classifying measurements as OK, RISK or FAILURE against each flow’s own history.',
       pergunta: 'Can we tell that an internet path is degrading before it goes down, by comparing each measurement with that flow’s own normal behavior?',
       fiz: 'Collected real ping measurements from the RIPE Atlas API (97 flows between 20 targets and 5 probes), labeled each one OK, RISK or FAILURE by its deviation from the flow’s own baseline, engineered features (robust z-score, RTT increase, jitter, packet loss, rolling windows) and trained a decision tree with a time-based train/validation/test split. Capstone across 3 courses, run with Scrum in a team of 5. My part: collection, cleaning, labeling and training.',
       resultado: [
@@ -351,6 +361,7 @@ const en = {
     {
       id: 'artigo-redes', grupo: true,
       titulo: 'Network degradation forecasting: model comparison',
+      resumo: 'A companion study comparing models to forecast the quality of 92 flows 12 minutes ahead.',
       pergunta: 'Can a Decision Tree, Random Forest or XGBoost anticipate a network failure?',
       fiz: 'Team study using public RIPE Atlas data: I contributed to comparing a Decision Tree, Random Forest and XGBoost to predict the quality class of 92 network flows 12 minutes ahead. The work used a time-based train, validation and test split and compared the models with persistence.',
       resultado: [
@@ -365,6 +376,7 @@ const en = {
     {
       id: 'horta', grupo: true,
       titulo: 'Horta Limpa: survey data turned into an educational game',
+      resumo: 'Local research on pesticides translated into an educational browser game.',
       pergunta: 'Why do people worry about pesticides but barely consider them when buying food?',
       fiz: 'Survey of 57 residents of Mogi das Cruzes cross-checked with data from ANVISA’s PARA program (Brazil’s health regulator). The findings became the rules of a browser game where the player spends a year growing a vegetable garden, with each mechanic tied to a teaching approach (Piaget, Paulo Freire). Built in plain JavaScript with an isometric Canvas 2D world; works on desktop and mobile. University outreach project at Braz Cubas.',
       resultado: [

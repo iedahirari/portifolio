@@ -45,7 +45,7 @@ function cabecaComum(t, titulo, descricao, urlPagina, alternativas) {
 	<title>${esc(titulo)}</title>
 	<meta name="description" content="${esc(descricao)}">
 	<meta name="author" content="${esc(contato.nome)}">
-	<meta name="theme-color" content="#c2306a">
+	<meta name="theme-color" content="#656b5c">
 	<link rel="canonical" href="${contato.site}${urlPagina}">
 	${alternativas.map(([lang, url]) => `<link rel="alternate" hreflang="${lang}" href="${contato.site}${url}">`).join('\n\t')}
 	<meta property="og:type" content="profile">
@@ -71,12 +71,20 @@ function cartaoProjeto(t, p) {
 		p.emAndamento && `<span class="chip chip--pessego">${t.rotulos.emAndamento}</span>`,
 		p.grupo && `<span class="chip chip--lilas">${t.rotulos.grupo}</span>`,
 	].filter(Boolean).join('');
-	const corpo = `<div class="projeto-corpo">
-						${selos ? `<div class="projeto-selos">${selos}</div>` : ''}<h3>${esc(p.titulo)}</h3>
+	const resumo = p.resumo;
+	const stackCurta = p.stack.slice(0, 4);
+	const detalhes = `<details class="projeto-detalhes"><summary>${t.rotulos.detalhes}</summary>
 						<dl class="campo"><dt>${t.rotulos.pergunta}</dt><dd class="pergunta">${esc(p.pergunta)}</dd></dl>
 						<dl class="campo"><dt>${t.rotulos.fiz}</dt><dd>${esc(p.fiz)}</dd></dl>
 						<dl class="campo"><dt>${t.rotulos.resultado}</dt><dd><ul class="resultados">${p.resultado.map((r) => `<li>${r}</li>`).join('')}</ul></dd></dl>
 						<div class="stack">${p.stack.map((s) => `<span class="chip chip--neutro">${esc(s)}</span>`).join('')}</div>
+					</details>`;
+	const corpo = `<div class="projeto-corpo">
+						${selos ? `<div class="projeto-selos">${selos}</div>` : ''}<h3>${esc(p.titulo)}</h3>
+						<p class="projeto-resumo">${esc(resumo)}</p>
+						<div class="projeto-evidencia"><span>${t.rotulos.evidencia}</span><strong>${semTags(p.resultado[0])}</strong></div>
+						<div class="stack">${stackCurta.map((s) => `<span class="chip chip--neutro">${esc(s)}</span>`).join('')}</div>
+						${detalhes}
 						<div class="projeto-links">${p.links.map((l) => linkProjeto(t, l)).join('')}</div>
 					</div>`;
 	const imagem = p.imagem ? `<div class="projeto-imagem"><img src="${prefixo(t)}${p.imagem}" alt="${esc(p.imagemAlt)}" loading="lazy" width="1200" height="540"></div>` : '';
@@ -102,7 +110,7 @@ function paginaPortfolio(t) {
 <head>
 	${cabecaComum(t, t.meta.titulo, t.meta.descricao, urlPagina, [['pt-BR', ''], ['en', 'en/'], ['x-default', '']])}
 	<script>document.documentElement.classList.add('js');</script>
-	<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-horizontal-loader">
+					<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-oliva-cards">
 	<script type="application/ld+json">${JSON.stringify(pessoa)}</script>
 </head>
 <body>

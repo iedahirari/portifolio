@@ -1,29 +1,29 @@
 /* ==========================================================================
    Portfólio Ieda Oliveira — design system
-   Paleta: rosa, blush, pêssego e lilás, com ameixa para texto (contraste AA).
+   Paleta: bege, terracota e oliva, com tons escuros para contraste AA.
    ========================================================================== */
 
 :root {
-	--fundo: #fff7f9;
-	--superficie: #ffffff;
-	--superficie-2: #fdeef3;
-	--pessego: #fde6d4;
-	--lilas: #efe7fb;
-	--borda: #f2dbe4;
+	--fundo: #f7f4ed;
+	--superficie: #fffdf9;
+	--superficie-2: #eee8dd;
+	--pessego: #f0e3d7;
+	--lilas: #e5e8df;
+	--borda: #d8c9b8;
 
-	--texto: #3b2735;
-	--texto-suave: #6e5766;
-	--titulo: #5a1c3d;
+	--texto: #35352e;
+	--texto-suave: #56594f;
+	--titulo: #4d4b3b;
 
-	--rosa: #c2306a;          /* botões e links (texto branco 5,2:1) */
-	--rosa-forte: #9e2154;
-	--rosa-claro: #f8d5e2;
-	--rosa-vivo: #f07aa6;     /* detalhes decorativos */
-	--lilas-forte: #6f4bb8;
-	--verde: #1f8a5a;
+	--rosa: #4d4b3b;          /* ações primárias com contraste alto */
+	--rosa-forte: #35352e;
+	--rosa-claro: #e6d7c7;
+	--rosa-vivo: #a56840;
+	--lilas-forte: #656b5c;
+	--verde: #656b5c;
 
-	--sombra: 0 1px 2px rgba(90, 28, 61, .06), 0 10px 30px rgba(90, 28, 61, .08);
-	--sombra-forte: 0 18px 50px rgba(90, 28, 61, .16);
+	--sombra: 0 1px 2px rgba(77, 75, 59, .06), 0 10px 30px rgba(77, 75, 59, .08);
+	--sombra-forte: 0 18px 50px rgba(77, 75, 59, .16);
 	--raio: 20px;
 	--raio-pequeno: 12px;
 	--largura: 1120px;
@@ -33,20 +33,20 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--fundo: #1b1018;
-		--superficie: #261821;
-		--superficie-2: #321f2b;
-		--pessego: #3a2620;
-		--lilas: #2b2340;
-		--borda: #43293a;
-		--texto: #f5e8ee;
-		--texto-suave: #c9adbd;
-		--titulo: #ffd6e6;
-		--rosa: #f07aa6;
-		--rosa-forte: #ff9cc0;
-		--rosa-claro: #4a2337;
-		--lilas-forte: #b9a0f0;
-		--verde: #5fd39a;
+		--fundo: #25251f;
+		--superficie: #303129;
+		--superficie-2: #3b3c33;
+		--pessego: #4b3b30;
+		--lilas: #394037;
+		--borda: #555648;
+		--texto: #f2eee6;
+		--texto-suave: #d0c9bc;
+		--titulo: #f0e3d7;
+		--rosa: #d7bca5;
+		--rosa-forte: #ead8c8;
+		--rosa-claro: #4d4035;
+		--lilas-forte: #c1c9b6;
+		--verde: #b9c3ae;
 		--sombra: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 30px rgba(0, 0, 0, .35);
 	}
 }
@@ -102,7 +102,7 @@ h3 { font-size: 1.15rem; }
 }
 .botao:hover { transform: translateY(-2px); }
 .botao svg { width: 18px; height: 18px; flex: none; }
-.botao--primario { background: var(--rosa); color: #fff; box-shadow: 0 8px 20px rgba(194, 48, 106, .28); }
+.botao--primario { background: var(--rosa); color: #fff; box-shadow: 0 8px 20px rgba(77, 75, 59, .22); }
 .botao--primario:hover { background: var(--rosa-forte); }
 .botao--contorno { background: var(--superficie); color: var(--titulo); border-color: var(--borda); }
 .botao--contorno:hover { border-color: var(--rosa); color: var(--rosa); }
@@ -115,9 +115,9 @@ h3 { font-size: 1.15rem; }
 	background: var(--rosa-claro); color: var(--rosa-forte);
 }
 .chip--lilas { background: var(--lilas); color: var(--lilas-forte); }
-.chip--pessego { background: var(--pessego); color: #8a4a1f; }
+.chip--pessego { background: var(--pessego); color: #805338; }
 .chip--neutro { background: var(--superficie-2); color: var(--texto-suave); font-weight: 500; }
-@media (prefers-color-scheme: dark) { .chip--pessego { color: #ffc9a3; } }
+@media (prefers-color-scheme: dark) { .chip--pessego { color: #ead8c8; } }
 
 /* Cabeçalho */
 .topo {
@@ -182,19 +182,26 @@ h3 { font-size: 1.15rem; }
 .diferencial .icone { width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; margin-bottom: 16px; }
 .diferencial .icone svg { width: 26px; height: 26px; }
 .diferencial:nth-child(1) .icone { background: var(--rosa-claro); color: var(--rosa); }
-.diferencial:nth-child(2) .icone { background: var(--pessego); color: #b4602b; }
+.diferencial:nth-child(2) .icone { background: var(--pessego); color: #805338; }
 .diferencial:nth-child(3) .icone { background: var(--lilas); color: var(--lilas-forte); }
 .diferencial p { color: var(--texto-suave); margin: 0; }
 
 /* Projetos */
-.projetos { display: grid; gap: 24px; }
+.projetos { display: grid; gap: 18px; }
 .projeto { display: grid; grid-template-columns: 1fr; align-content: start; overflow: hidden; padding: 0; }
-.projeto--com-imagem { grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); align-items: stretch; }
+.projeto--com-imagem { grid-template-columns: minmax(0, 1.35fr) minmax(240px, .65fr); align-items: stretch; }
 .projeto-imagem { background: var(--superficie-2); display: flex; align-items: center; justify-content: center; padding: 20px; border-left: 1px solid var(--borda); }
 .projeto-imagem img { width: 100%; height: auto; border-radius: var(--raio-pequeno); box-shadow: var(--sombra); background: #fff; }
-.projeto-corpo { padding: 28px; display: flex; flex-direction: column; gap: 14px; }
+.projeto-corpo { padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
 .projeto-selos { display: flex; flex-wrap: wrap; gap: 8px; }
 .projeto h3 { font-family: var(--fonte-titulo); font-weight: 400; font-size: 1.55rem; margin: 0; }
+.projeto-resumo { margin: 0; color: var(--texto-suave); }
+.projeto-evidencia { display: grid; gap: 3px; padding: 10px 12px; border-left: 3px solid var(--rosa-vivo); background: var(--superficie-2); border-radius: 0 var(--raio-pequeno) var(--raio-pequeno) 0; }
+.projeto-evidencia span { color: var(--texto-suave); font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.projeto-evidencia strong { color: var(--titulo); font-size: .9rem; line-height: 1.45; }
+.projeto-detalhes { border-top: 1px solid var(--borda); padding-top: 8px; }
+.projeto-detalhes summary { color: var(--lilas-forte); font-weight: 700; cursor: pointer; font-size: .9rem; }
+.projeto-detalhes[open] { display: grid; gap: 10px; }
 .campo { margin: 0; }
 .campo dt { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--rosa); }
 .campo dd { margin: 2px 0 0; color: var(--texto-suave); }

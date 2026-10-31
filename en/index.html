@@ -6,7 +6,7 @@
 	<title>Ieda Oliveira · Business Analysis, Requirements &amp; Processes</title>
 	<meta name="description" content="Portfolio of Ieda Oliveira: Computer Science and Mathematics student focused on business analysis, requirements, processes and operations.">
 	<meta name="author" content="Ieda Oliveira">
-	<meta name="theme-color" content="#c2306a">
+	<meta name="theme-color" content="#656b5c">
 	<link rel="canonical" href="https://iedahirari.github.io/portifolio/en/">
 	<link rel="alternate" hreflang="pt-BR" href="https://iedahirari.github.io/portifolio/">
 	<link rel="alternate" hreflang="en" href="https://iedahirari.github.io/portifolio/en/">
@@ -23,7 +23,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap">
 	<script>document.documentElement.classList.add('js');</script>
-	<link rel="stylesheet" href="../assets/estilo.css?v=20261031-horizontal-loader">
+					<link rel="stylesheet" href="../assets/estilo.css?v=20261031-oliva-cards">
 	<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ieda Oliveira","url":"https://iedahirari.github.io/portifolio/en/","image":"https://avatars.githubusercontent.com/u/61597704?v=4","jobTitle":"Business Analysis, Requirements & Processes","email":"mailto:iedahirari@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Suzano","addressRegion":"SP","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/in/ieda-oliveira/","https://github.com/iedahirari"],"knowsAbout":["Business Analysis","Requirements Analysis","Business Processes","BPMN","Functional Support","Systems Implementation","Operations","SQL","Excel","Power BI"]}</script>
 </head>
 <body>
@@ -115,10 +115,15 @@
 					<article class="cartao projeto projeto--com-imagem" id="projeto-olist">
 					<div class="projeto-corpo">
 						<h3>Olist e-commerce: late deliveries × customer satisfaction</h3>
+						<p class="projeto-resumo">Analysis of about 100k orders to understand how delivery times relate to customer ratings.</p>
+						<div class="projeto-evidencia"><span>Evidence</span><strong>Late orders get an average rating of 2.27, versus 4.29 for on-time orders.</strong></div>
+						<div class="stack"><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">pandas</span><span class="chip chip--neutro">Seaborn</span><span class="chip chip--neutro">Power BI</span></div>
+						<details class="projeto-detalhes"><summary>View method and results</summary>
 						<dl class="campo"><dt>Question</dt><dd class="pergunta">Do late deliveries hurt customer satisfaction? Where should the company act first?</dd></dl>
 						<dl class="campo"><dt>What I did</dt><dd>Exploratory analysis in Python of about 100k real orders (Olist, 2016–2018), joining 6 relational tables, with data quality checks, feature engineering (delivery time, days late), descriptive statistics and Pearson correlation. Power BI dashboard with a star schema, Power Query and DAX measures.</dd></dl>
-						<dl class="campo"><dt>Result</dt><dd><ul class="resultados"><li>Late orders get an average rating of <strong>2.27</strong>, versus <strong>4.29</strong> for on-time orders.</li><li>They are only <strong>7%</strong> of orders but drive <strong>32%</strong> of all negative reviews.</li><li>The Northeast has the highest late rates (Alagoas <strong>21%</strong>); Rio de Janeiro, the 2nd largest market, is late <strong>12%</strong> of the time, almost 3 times as often as São Paulo and Minas Gerais.</li><li>Jan–Aug 2018 revenue was <strong>141%</strong> higher than the same period of 2017, peaking on Black Friday.</li></ul></dd></dl>
+						<dl class="campo"><dt>Results</dt><dd><ul class="resultados"><li>Late orders get an average rating of <strong>2.27</strong>, versus <strong>4.29</strong> for on-time orders.</li><li>They are only <strong>7%</strong> of orders but drive <strong>32%</strong> of all negative reviews.</li><li>The Northeast has the highest late rates (Alagoas <strong>21%</strong>); Rio de Janeiro, the 2nd largest market, is late <strong>12%</strong> of the time, almost 3 times as often as São Paulo and Minas Gerais.</li><li>Jan–Aug 2018 revenue was <strong>141%</strong> higher than the same period of 2017, peaking on Black Friday.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">pandas</span><span class="chip chip--neutro">Seaborn</span><span class="chip chip--neutro">Power BI</span><span class="chip chip--neutro">DAX</span><span class="chip chip--neutro">Star schema</span></div>
+					</details>
 						<div class="projeto-links"><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/dashboard-ecommerce-olist" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>View code</a></div>
 					</div>
 					<div class="projeto-imagem"><img src="../assets/img/olist.png" alt="Bar chart: the average rating drops from 4.29 to about 1.7 as delays grow" loading="lazy" width="1200" height="540"></div>
@@ -126,10 +131,15 @@
 					<article class="cartao projeto projeto--com-imagem" id="projeto-varejo-sql">
 					<div class="projeto-corpo">
 						<h3>Retail analysis with SQL: customers, products and retention</h3>
+						<p class="projeto-resumo">Over 1 million rows analyzed to explore revenue, customers, retention and returns.</p>
+						<div class="projeto-evidencia"><span>Evidence</span><strong>24% of identified customers account for about 70% of net revenue.</strong></div>
+						<div class="stack"><span class="chip chip--neutro">SQL</span><span class="chip chip--neutro">DuckDB</span><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">Power BI</span></div>
+						<details class="projeto-detalhes"><summary>View method and results</summary>
 						<dl class="campo"><dt>Question</dt><dd class="pergunta">Which products drive revenue, and which customers need attention?</dd></dl>
 						<dl class="campo"><dt>What I did</dt><dd>Analysis of over 1 million rows from the Online Retail II dataset (2009–2011) using DuckDB and SQL. I diagnosed and cleaned the data, then built ABC analysis, RFM customer segments, cohort retention and returns analysis. I exported a star schema and built an executive Power BI dashboard.</dd></dl>
-						<dl class="campo"><dt>Result</dt><dd><ul class="resultados"><li>24% of identified customers account for about <strong>70% of net revenue</strong>.</li><li>The <strong>711 at-risk customers</strong> account for about £1.4 million in historical net revenue.</li><li>Class C accounts for half of the products but only <strong>5% of net revenue</strong>.</li></ul></dd></dl>
+						<dl class="campo"><dt>Results</dt><dd><ul class="resultados"><li>24% of identified customers account for about <strong>70% of net revenue</strong>.</li><li>The <strong>711 at-risk customers</strong> account for about £1.4 million in historical net revenue.</li><li>Class C accounts for half of the products but only <strong>5% of net revenue</strong>.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">SQL</span><span class="chip chip--neutro">DuckDB</span><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">Power BI</span><span class="chip chip--neutro">Star schema</span></div>
+					</details>
 						<div class="projeto-links"><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/analise-varejo-sql" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>View code</a></div>
 					</div>
 					<div class="projeto-imagem"><img src="../assets/img/varejo-sql.png" alt="Retail dashboard with monthly revenue, cohort retention, RFM customers and returns" loading="lazy" width="1200" height="540"></div>
@@ -137,10 +147,15 @@
 					<article class="cartao projeto projeto--com-imagem" id="projeto-monitorae">
 					<div class="projeto-corpo">
 						<h3>MONITORAÊ: where public money goes in Mogi das Cruzes</h3>
+						<p class="projeto-resumo">Requirements and automated public-data collection to make city spending easier to explore.</p>
+						<div class="projeto-evidencia"><span>Evidence</span><strong>Spending by area from 2019 to today: R$ 2.3 billion in 2025, led by Education and Health.</strong></div>
+						<div class="stack"><span class="chip chip--neutro">Node.js</span><span class="chip chip--neutro">PHP</span><span class="chip chip--neutro">MySQL</span><span class="chip chip--neutro">Python</span></div>
+						<details class="projeto-detalhes"><summary>View method and results</summary>
 						<dl class="campo"><dt>Question</dt><dd class="pergunta">How can citizens easily see how much the city spends in each area and how much it receives from the State?</dd></dl>
 						<dl class="campo"><dt>What I did</dt><dd>Web crawlers in PHP and Node.js that collect data from the city transparency portal, the city council site and the Brazilian Treasury API (SICONFI/RREO). ETL pipeline on GitHub Actions: collection runs weekly and publishes JSON, with no server or database in production. Academic version with MySQL/MariaDB and a Python script that converts SQL to JSON. I also handled requirements engineering (requirements, traceability matrix and UML use cases) in a team of 4 at Fatec Mogi das Cruzes.</dd></dl>
-						<dl class="campo"><dt>Result</dt><dd><ul class="resultados"><li>Spending by area from 2019 to today: <strong>R$ 2.3 billion</strong> in 2025, led by Education and Health.</li><li>State transfers (ICMS and IPVA taxes) and salaries of <strong>5.6k</strong> public employees.</li><li>Fixed a bug in the original crawler that dropped the cents from salaries.</li></ul></dd></dl>
+						<dl class="campo"><dt>Results</dt><dd><ul class="resultados"><li>Spending by area from 2019 to today: <strong>R$ 2.3 billion</strong> in 2025, led by Education and Health.</li><li>State transfers (ICMS and IPVA taxes) and salaries of <strong>5.6k</strong> public employees.</li><li>Fixed a bug in the original crawler that dropped the cents from salaries.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">Node.js</span><span class="chip chip--neutro">PHP</span><span class="chip chip--neutro">MySQL</span><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">ETL</span><span class="chip chip--neutro">GitHub Actions</span><span class="chip chip--neutro">UML</span></div>
+					</details>
 						<div class="projeto-links"><a class="botao botao--primario botao--pequeno" href="https://iedahirari.github.io/Projeto-de-Engenharia-de-Software-2---ES2/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>Live site</a><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/Projeto-de-Engenharia-de-Software-2---ES2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>View code</a></div>
 					</div>
 					<div class="projeto-imagem"><img src="../assets/img/monitorae.png" alt="MONITORAÊ reports page showing spending by government area" loading="lazy" width="1200" height="540"></div>
@@ -148,10 +163,15 @@
 					<article class="cartao projeto" id="projeto-webagri">
 					<div class="projeto-corpo">
 						<div class="projeto-selos"><span class="chip chip--pessego">In progress</span><span class="chip chip--lilas">Team project</span></div><h3>Network degradation predictor with a decision tree</h3>
+						<p class="projeto-resumo">Team project classifying measurements as OK, RISK or FAILURE against each flow’s own history.</p>
+						<div class="projeto-evidencia"><span>Evidence</span><strong>Tree trained on over 115k measurements and validated on about 45k, reaching a macro F1 of 0.99, with a critical error analysis.</strong></div>
+						<div class="stack"><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">scikit-learn</span><span class="chip chip--neutro">pandas</span><span class="chip chip--neutro">REST APIs</span></div>
+						<details class="projeto-detalhes"><summary>View method and results</summary>
 						<dl class="campo"><dt>Question</dt><dd class="pergunta">Can we tell that an internet path is degrading before it goes down, by comparing each measurement with that flow’s own normal behavior?</dd></dl>
 						<dl class="campo"><dt>What I did</dt><dd>Collected real ping measurements from the RIPE Atlas API (97 flows between 20 targets and 5 probes), labeled each one OK, RISK or FAILURE by its deviation from the flow’s own baseline, engineered features (robust z-score, RTT increase, jitter, packet loss, rolling windows) and trained a decision tree with a time-based train/validation/test split. Capstone across 3 courses, run with Scrum in a team of 5. My part: collection, cleaning, labeling and training.</dd></dl>
-						<dl class="campo"><dt>Result</dt><dd><ul class="resultados"><li>Tree trained on over <strong>115k</strong> measurements and validated on about <strong>45k</strong>, reaching a macro F1 of <strong>0.99</strong>, with a critical error analysis.</li><li>Reproducible pipeline, parameters in config files and a data dictionary.</li></ul></dd></dl>
+						<dl class="campo"><dt>Results</dt><dd><ul class="resultados"><li>Tree trained on over <strong>115k</strong> measurements and validated on about <strong>45k</strong>, reaching a macro F1 of <strong>0.99</strong>, with a critical error analysis.</li><li>Reproducible pipeline, parameters in config files and a data dictionary.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">scikit-learn</span><span class="chip chip--neutro">pandas</span><span class="chip chip--neutro">REST APIs</span><span class="chip chip--neutro">Scrum</span></div>
+					</details>
 						<div class="projeto-links"><a class="botao botao--primario botao--pequeno" href="https://zorahsai.github.io/Projeto-WebAgriculture-/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>Live site</a><a class="botao botao--contorno botao--pequeno" href="https://github.com/ZorahSai/Projeto-WebAgriculture-" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>View code</a></div>
 					</div>
 					
@@ -159,10 +179,15 @@
 					<article class="cartao projeto projeto--com-imagem" id="projeto-artigo-redes">
 					<div class="projeto-corpo">
 						<div class="projeto-selos"><span class="chip chip--lilas">Team project</span></div><h3>Network degradation forecasting: model comparison</h3>
+						<p class="projeto-resumo">A companion study comparing models to forecast the quality of 92 flows 12 minutes ahead.</p>
+						<div class="projeto-evidencia"><span>Evidence</span><strong>XGBoost reached a 0.765 macro F1, only slightly above persistence (0.753).</strong></div>
+						<div class="stack"><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">scikit-learn</span><span class="chip chip--neutro">XGBoost</span><span class="chip chip--neutro">RIPE Atlas</span></div>
+						<details class="projeto-detalhes"><summary>View method and results</summary>
 						<dl class="campo"><dt>Question</dt><dd class="pergunta">Can a Decision Tree, Random Forest or XGBoost anticipate a network failure?</dd></dl>
 						<dl class="campo"><dt>What I did</dt><dd>Team study using public RIPE Atlas data: I contributed to comparing a Decision Tree, Random Forest and XGBoost to predict the quality class of 92 network flows 12 minutes ahead. The work used a time-based train, validation and test split and compared the models with persistence.</dd></dl>
-						<dl class="campo"><dt>Result</dt><dd><ul class="resultados"><li>XGBoost reached a <strong>0.765 macro F1</strong>, only slightly above persistence (0.753).</li><li>No model anticipated the start of failures (recall <strong>0.002</strong>); the analysis documents this limitation.</li></ul></dd></dl>
+						<dl class="campo"><dt>Results</dt><dd><ul class="resultados"><li>XGBoost reached a <strong>0.765 macro F1</strong>, only slightly above persistence (0.753).</li><li>No model anticipated the start of failures (recall <strong>0.002</strong>); the analysis documents this limitation.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">scikit-learn</span><span class="chip chip--neutro">XGBoost</span><span class="chip chip--neutro">RIPE Atlas</span><span class="chip chip--neutro">Time-based validation</span></div>
+					</details>
 						<div class="projeto-links"><a class="botao botao--primario botao--pequeno" href="https://iedahirari.github.io/artigo-preditor-redes/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>Read paper</a><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/artigo-preditor-redes" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>View code</a></div>
 					</div>
 					<div class="projeto-imagem"><img src="../assets/img/preditor-redes-metricas.png" alt="Chart comparing test macro F1 and failure metrics across the models" loading="lazy" width="1200" height="540"></div>
@@ -170,10 +195,15 @@
 					<article class="cartao projeto" id="projeto-horta">
 					<div class="projeto-corpo">
 						<div class="projeto-selos"><span class="chip chip--lilas">Team project</span></div><h3>Horta Limpa: survey data turned into an educational game</h3>
+						<p class="projeto-resumo">Local research on pesticides translated into an educational browser game.</p>
+						<div class="projeto-evidencia"><span>Evidence</span><strong>86% worry about pesticides, yet 73.7% choose produce by its looks.</strong></div>
+						<div class="stack"><span class="chip chip--neutro">Survey research</span><span class="chip chip--neutro">JavaScript</span><span class="chip chip--neutro">Canvas 2D</span></div>
+						<details class="projeto-detalhes"><summary>View method and results</summary>
 						<dl class="campo"><dt>Question</dt><dd class="pergunta">Why do people worry about pesticides but barely consider them when buying food?</dd></dl>
 						<dl class="campo"><dt>What I did</dt><dd>Survey of 57 residents of Mogi das Cruzes cross-checked with data from ANVISA’s PARA program (Brazil’s health regulator). The findings became the rules of a browser game where the player spends a year growing a vegetable garden, with each mechanic tied to a teaching approach (Piaget, Paulo Freire). Built in plain JavaScript with an isometric Canvas 2D world; works on desktop and mobile. University outreach project at Braz Cubas.</dd></dl>
-						<dl class="campo"><dt>Result</dt><dd><ul class="resultados"><li><strong>86%</strong> worry about pesticides, yet <strong>73.7%</strong> choose produce by its looks.</li><li>ANVISA found <strong>20.6%</strong> of samples non-compliant in the 2024 cycle.</li></ul></dd></dl>
+						<dl class="campo"><dt>Results</dt><dd><ul class="resultados"><li><strong>86%</strong> worry about pesticides, yet <strong>73.7%</strong> choose produce by its looks.</li><li>ANVISA found <strong>20.6%</strong> of samples non-compliant in the 2024 cycle.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">Survey research</span><span class="chip chip--neutro">JavaScript</span><span class="chip chip--neutro">Canvas 2D</span></div>
+					</details>
 						<div class="projeto-links"><a class="botao botao--primario botao--pequeno" href="https://iedahirari.github.io/Horta-Limpa/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg>Play</a><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/Horta-Limpa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>View code</a></div>
 					</div>
 					
@@ -181,10 +211,15 @@
 					<article class="cartao projeto" id="projeto-artigo">
 					<div class="projeto-corpo">
 						<h3>Published paper: access control for cloud databases</h3>
+						<p class="projeto-resumo">undefined</p>
+						<div class="projeto-evidencia"><span>Evidence</span><strong>Published in Revista EduFatec (issue 6, 2023, in Portuguese).</strong></div>
+						<div class="stack"><span class="chip chip--neutro">Data governance</span><span class="chip chip--neutro">Security</span><span class="chip chip--neutro">Research</span></div>
+						<details class="projeto-detalhes"><summary>View method and results</summary>
 						<dl class="campo"><dt>Question</dt><dd class="pergunta">Which access control model (DAC, MAC or RBAC) best protects cloud databases?</dd></dl>
 						<dl class="campo"><dt>What I did</dt><dd>Comparative review of 16 academic papers (IEEE, ACM and Google Scholar) on data integrity, availability and governance.</dd></dl>
-						<dl class="campo"><dt>Result</dt><dd><ul class="resultados"><li>Published in <strong>Revista EduFatec</strong> (issue 6, 2023, in Portuguese).</li></ul></dd></dl>
+						<dl class="campo"><dt>Results</dt><dd><ul class="resultados"><li>Published in <strong>Revista EduFatec</strong> (issue 6, 2023, in Portuguese).</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">Data governance</span><span class="chip chip--neutro">Security</span><span class="chip chip--neutro">Research</span></div>
+					</details>
 						<div class="projeto-links"><a class="botao botao--primario botao--pequeno" href="https://revistaedufatec.fatecfranca.edu.br/wp-content/uploads/2024/04/edufatec-n06v2a07.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>Read paper</a></div>
 					</div>
 					
