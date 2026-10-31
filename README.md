@@ -12,12 +12,15 @@ Tenho mais de seis anos de experiência em gestão comercial e operações no va
 
 Os currículos têm uma coluna e texto real (não imagem), para que sistemas de recrutamento como Gupy, LinkedIn e Indeed consigam ler. O link do portfólio gera prévia com foto e descrição quando é compartilhado no LinkedIn ou no WhatsApp.
 
-## Projetos em destaque
+## Projetos
 
 - **[MONITORAÊ](https://github.com/iedahirari/Projeto-de-Engenharia-de-Software-2---ES2):** projeto em equipe com coleta de dados públicos do Tesouro Nacional e da Prefeitura de Mogi das Cruzes, atualizados semanalmente com GitHub Actions. Incluiu levantamento e organização de requisitos, matriz de rastreabilidade e casos de uso UML.
+- **[Análise de varejo com SQL](https://github.com/iedahirari/analise-varejo-sql):** análise de mais de 1 milhão de linhas com DuckDB, SQL, Curva ABC, segmentação RFM, retenção por coorte e devoluções; inclui modelo estrela e dashboard executivo em Power BI.
 - **[E-commerce Olist](https://github.com/iedahirari/dashboard-ecommerce-olist):** análise de cerca de 100 mil pedidos; identificou que pedidos atrasados representavam 7% do total e concentravam 32% das avaliações negativas (Python, pandas, Power BI).
 - **[Horta Limpa](https://github.com/iedahirari/Horta-Limpa):** pesquisa com consumidores e dados da Anvisa que viraram um jogo educativo.
-- **[Preditor de falhas em redes](https://github.com/ZorahSai/Projeto-WebAgriculture-):** projeto em grupo, em andamento, que explora árvore de decisão com medições do RIPE Atlas.
+- **[Preditor de degradação de rede](https://github.com/ZorahSai/Projeto-WebAgriculture-):** projeto integrador em equipe com dados do RIPE Atlas, árvore de decisão e classificação de qualidade de rede.
+- **[Comparação de modelos para previsão de redes](https://github.com/iedahirari/artigo-preditor-redes):** estudo em equipe que compara Árvore de Decisão, Random Forest e XGBoost para prever a qualidade de fluxos 12 minutos à frente; inclui análise dos limites dos modelos e [artigo online](https://iedahirari.github.io/artigo-preditor-redes/).
+- **[Artigo sobre controle de acesso em bancos de dados na nuvem](https://revistaedufatec.fatecfranca.edu.br/wp-content/uploads/2024/04/edufatec-n06v2a07.pdf):** revisão comparativa de 16 trabalhos sobre DAC, MAC e RBAC, publicada na Revista EduFatec.
 
 ## Como editar
 
