@@ -106,7 +106,7 @@ function paginaPortfolio(t) {
 <head>
 	${cabecaComum(t, t.meta.titulo, t.meta.descricao, urlPagina, [['pt-BR', ''], ['en', 'en/'], ['x-default', '']])}
 	<script>document.documentElement.classList.add('js');</script>
-					<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-wine-balance-3">
+					<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-desktop-balance">
 	<script type="application/ld+json">${JSON.stringify(pessoa)}</script>
 </head>
 <body>
@@ -225,14 +225,11 @@ function paginaPortfolio(t) {
 							<ul>${x.itens.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
 						</li>`).join('\n\t\t\t\t\t\t')}
 					</ol>
+				</div>
 					<div class="lado">
 						<div class="cartao">
 							<h3>${esc(t.trajetoria.formacaoTitulo)}</h3>
 							<ul class="lista-simples">${t.trajetoria.formacao.map((f) => `<li><strong>${esc(f.curso)}</strong><span>${esc(f.instituicao)} · ${esc(f.periodo)}</span></li>`).join('')}</ul>
-						</div>
-						<div class="cartao">
-							<h3>${esc(t.trajetoria.cursosTitulo)}</h3>
-							<ul class="lista-simples">${t.trajetoria.cursos.map((c) => `<li><strong>${esc(c.nome)}</strong><span>${esc(c.origem)} · ${esc(c.ano)}</span></li>`).join('')}</ul>
 						</div>
 						<div class="cartao">
 							<h3>${esc(t.trajetoria.voluntariadoTitulo)}</h3>
@@ -242,7 +239,10 @@ function paginaPortfolio(t) {
 							<h3>${esc(t.trajetoria.idiomasTitulo)}</h3>
 							<ul class="lista-simples">${t.trajetoria.idiomas.map((i) => `<li><span>${esc(i)}</span></li>`).join('')}</ul>
 						</div>
-					</div>
+						<div class="cartao cartao--certificados">
+							<h3>${esc(t.trajetoria.cursosTitulo)}</h3>
+							<ul class="lista-simples lista-certificados">${t.trajetoria.cursos.map((c) => `<li><strong>${esc(c.nome)}</strong><span>${esc(c.origem)} · ${esc(c.ano)}</span></li>`).join('')}</ul>
+						</div>
 				</div>
 			</div>
 		</section>

@@ -23,7 +23,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap">
 	<script>document.documentElement.classList.add('js');</script>
-					<link rel="stylesheet" href="assets/estilo.css?v=20261031-wine-balance-3">
+					<link rel="stylesheet" href="assets/estilo.css?v=20261031-desktop-balance">
 	<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ieda Oliveira","url":"https://iedahirari.github.io/portifolio/","image":"https://avatars.githubusercontent.com/u/61597704?v=4","jobTitle":"Análise de Negócios, Requisitos e Processos","email":"mailto:iedahirari@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Suzano","addressRegion":"SP","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/in/ieda-oliveira/","https://github.com/iedahirari"],"knowsAbout":["Business Analysis","Requirements Analysis","Business Processes","BPMN","Functional Support","Systems Implementation","Operations","SQL","Excel","Power BI"]}</script>
 </head>
 <body>
@@ -142,11 +142,11 @@
 						<dl class="campo"><dt>Resultados</dt><dd><ul class="resultados"><li>24% dos clientes identificados respondem por cerca de <strong>70% da receita líquida</strong>.</li><li>O segmento de <strong>711 clientes em risco</strong> soma cerca de £ 1,4 milhão em receita líquida histórica.</li><li>A classe C representa metade dos produtos e só <strong>5% da receita líquida</strong>.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">SQL</span><span class="chip chip--neutro">DuckDB</span><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">Power BI</span><span class="chip chip--neutro">Star Schema</span></div>
 					</details><div class="projeto-links"><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/analise-varejo-sql" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>Ver código</a></div></div></article>
-					<article class="cartao projeto" id="projeto-webagri"><div class="projeto-corpo">
+					<article class="cartao projeto projeto--com-imagem" id="projeto-webagri"><div class="projeto-corpo">
 						<div class="projeto-selos"><span class="chip chip--pessego">Em andamento</span><span class="chip chip--lilas">Projeto em grupo</span></div><h3>Preditor de degradação de rede com árvore de decisão</h3>
 						<p class="projeto-resumo">Projeto em equipe que classifica medições como OK, RISCO ou FALHA comparando cada fluxo com seu histórico.</p>
 						<div class="stack"><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">scikit-learn</span><span class="chip chip--neutro">pandas</span><span class="chip chip--neutro">APIs REST</span></div>
-					</div><div class="projeto-evidencia"><span>Evidência</span><strong>Árvore treinada com mais de 115 mil medições e validada em cerca de 45 mil, com F1 macro de 0,99 e análise crítica dos erros.</strong></div><div class="projeto-rodape"><details class="projeto-detalhes"><summary>Ver método e resultados</summary>
+					</div><div class="projeto-imagem"><img src="assets/img/preditor-rede-site.png" alt="Captura da página de apresentação do projeto Preditor de Degradação de Rede" loading="lazy" width="1200" height="540"></div><div class="projeto-evidencia"><span>Evidência</span><strong>Árvore treinada com mais de 115 mil medições e validada em cerca de 45 mil, com F1 macro de 0,99 e análise crítica dos erros.</strong></div><div class="projeto-rodape"><details class="projeto-detalhes"><summary>Ver método e resultados</summary>
 						<dl class="campo"><dt>Pergunta</dt><dd class="pergunta">Dá para saber que um ponto da internet está degradando antes que ele caia, comparando cada medição com o comportamento normal do próprio fluxo?</dd></dl>
 						<dl class="campo"><dt>O que eu fiz</dt><dd>Coleta de medições reais de ping da API do RIPE Atlas (97 fluxos entre 20 destinos e 5 origens), rótulo de cada medição como OK, RISCO ou FALHA pelo desvio em relação ao próprio histórico, engenharia de atributos (z-score robusto, aumento de RTT, jitter, perda de pacotes, janelas móveis) e treino de uma árvore de decisão com corte temporal entre treino, validação e teste. Projeto integrador de 3 disciplinas, em Scrum, com equipe de 5 pessoas. Minha parte: coleta, limpeza, rotulagem e treino.</dd></dl>
 						<dl class="campo"><dt>Resultados</dt><dd><ul class="resultados"><li>Árvore treinada com mais de <strong>115 mil</strong> medições e validada em cerca de <strong>45 mil</strong>, com F1 macro de <strong>0,99</strong> e análise crítica dos erros.</li><li>Pipeline reprodutível, parâmetros em arquivos de configuração e dicionário de dados.</li></ul></dd></dl>
@@ -162,11 +162,11 @@
 						<dl class="campo"><dt>Resultados</dt><dd><ul class="resultados"><li>O XGBoost chegou a <strong>F1 macro 0,765</strong>, pouco acima da persistência (0,753).</li><li>Nenhum modelo antecipou o início de falhas (recall de <strong>0,002</strong>), uma limitação que registrei na análise.</li></ul></dd></dl>
 						<div class="stack"><span class="chip chip--neutro">Python</span><span class="chip chip--neutro">scikit-learn</span><span class="chip chip--neutro">XGBoost</span><span class="chip chip--neutro">RIPE Atlas</span><span class="chip chip--neutro">Validação temporal</span></div>
 					</details><div class="projeto-links"><a class="botao botao--primario botao--pequeno" href="https://iedahirari.github.io/artigo-preditor-redes/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>Ler artigo</a><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/artigo-preditor-redes" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>Ver código</a></div></div></article>
-					<article class="cartao projeto" id="projeto-horta"><div class="projeto-corpo">
+					<article class="cartao projeto projeto--com-imagem" id="projeto-horta"><div class="projeto-corpo">
 						<div class="projeto-selos"><span class="chip chip--lilas">Projeto em grupo</span></div><h3>Horta Limpa: dados de pesquisa viram jogo educativo</h3>
 						<p class="projeto-resumo">Pesquisa local sobre agrotóxicos transformada em um jogo educativo de navegador.</p>
 						<div class="stack"><span class="chip chip--neutro">Pesquisa quantitativa</span><span class="chip chip--neutro">JavaScript</span><span class="chip chip--neutro">Canvas 2D</span></div>
-					</div><div class="projeto-evidencia"><span>Evidência</span><strong>86% se preocupam com agrotóxicos, mas 73,7% escolhem o alimento pela aparência.</strong></div><div class="projeto-rodape"><details class="projeto-detalhes"><summary>Ver método e resultados</summary>
+					</div><div class="projeto-imagem"><img src="assets/img/horta-limpa.png" alt="Captura do jogo Horta Limpa, com a horta isométrica e a interface de ferramentas" loading="lazy" width="1200" height="540"></div><div class="projeto-evidencia"><span>Evidência</span><strong>86% se preocupam com agrotóxicos, mas 73,7% escolhem o alimento pela aparência.</strong></div><div class="projeto-rodape"><details class="projeto-detalhes"><summary>Ver método e resultados</summary>
 						<dl class="campo"><dt>Pergunta</dt><dd class="pergunta">Por que as pessoas se preocupam com agrotóxicos, mas quase não pensam neles na hora de comprar?</dd></dl>
 						<dl class="campo"><dt>O que eu fiz</dt><dd>Questionário com 57 moradores de Mogi das Cruzes cruzado com os dados do programa PARA da Anvisa. Os achados viraram as regras de um jogo de navegador em que o jogador passa um ano cultivando uma horta, com cada mecânica ligada a uma base pedagógica (Piaget, Paulo Freire). Feito em JavaScript puro com mundo isométrico em Canvas 2D, funciona no computador e no celular. Projeto de extensão do Centro Universitário Braz Cubas.</dd></dl>
 						<dl class="campo"><dt>Resultados</dt><dd><ul class="resultados"><li><strong>86%</strong> se preocupam com agrotóxicos, mas <strong>73,7%</strong> escolhem o alimento pela aparência.</li><li>A Anvisa encontrou <strong>20,6%</strong> das amostras irregulares no ciclo de 2024.</li></ul></dd></dl>
@@ -174,7 +174,7 @@
 					</details><div class="projeto-links"><a class="botao botao--primario botao--pequeno" href="https://iedahirari.github.io/Horta-Limpa/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg>Jogar</a><a class="botao botao--contorno botao--pequeno" href="https://github.com/iedahirari/Horta-Limpa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>Ver código</a></div></div></article>
 					<article class="cartao projeto" id="projeto-artigo"><div class="projeto-corpo">
 						<h3>Artigo publicado: controle de acesso em bancos de dados na nuvem</h3>
-						<p class="projeto-resumo">undefined</p>
+						<p class="projeto-resumo">Artigo acadêmico que compara modelos de controle de acesso e segurança para bancos de dados na nuvem.</p>
 						<div class="stack"><span class="chip chip--neutro">Governança de dados</span><span class="chip chip--neutro">Segurança</span><span class="chip chip--neutro">Pesquisa científica</span></div>
 					</div><div class="projeto-evidencia"><span>Evidência</span><strong>Publicado na Revista EduFatec (ed. 6, 2023).</strong></div><div class="projeto-rodape"><details class="projeto-detalhes"><summary>Ver método e resultados</summary>
 						<dl class="campo"><dt>Pergunta</dt><dd class="pergunta">Qual modelo de controle de acesso (DAC, MAC ou RBAC) protege melhor bancos de dados na nuvem?</dd></dl>
@@ -244,14 +244,11 @@
 							<ul><li>Análise de carteira de inadimplência e negociação orientada a metas de recuperação.</li></ul>
 						</li>
 					</ol>
+				</div>
 					<div class="lado">
 						<div class="cartao">
 							<h3>Formação</h3>
 							<ul class="lista-simples"><li><strong>Bacharelado em Ciência da Computação</strong><span>Centro Universitário Braz Cubas · Previsão: 2029</span></li><li><strong>Graduação em Matemática</strong><span>Instituto Federal de São Paulo (IFSP) · Previsão: 2028</span></li><li><strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong><span>Fatec Mogi das Cruzes · 2019 – 2024 (interrompido)</span></li></ul>
-						</div>
-						<div class="cartao">
-							<h3>Certificados e publicação</h3>
-							<ul class="lista-simples"><li><strong>Process Modeling — Bizagi (modelagem de processos com BPMN)</strong><span>Bizagi · out/2026</span></li><li><strong>Artigo: &quot;Modelos de Controle de Acesso em Bancos de Dados na Nuvem: uma análise comparativa&quot;</strong><span>Revista EduFatec, n. 6, v. 2 · 2023</span></li><li><strong>Preparando Dados para Análise com Microsoft Power BI</strong><span>Fundação Bradesco · jan/2025</span></li><li><strong>Cultura Digital</strong><span>Fundação Bradesco · jan/2025</span></li><li><strong>Análise de Dados no Power BI</strong><span>Fundação Bradesco · nov/2024</span></li><li><strong>Introdução à Análise de Dados: Microsoft Power BI</strong><span>Fundação Bradesco · nov/2024</span></li><li><strong>Implementando Banco de Dados</strong><span>Fundação Bradesco · dez/2023</span></li></ul>
 						</div>
 						<div class="cartao">
 							<h3>Voluntariado</h3>
@@ -261,7 +258,10 @@
 							<h3>Idiomas</h3>
 							<ul class="lista-simples"><li><span>Português: nativo</span></li><li><span>Inglês: básico a intermediário</span></li><li><span>Espanhol: básico a intermediário</span></li></ul>
 						</div>
-					</div>
+						<div class="cartao cartao--certificados">
+							<h3>Certificados e publicação</h3>
+							<ul class="lista-simples lista-certificados"><li><strong>Process Modeling — Bizagi (modelagem de processos com BPMN)</strong><span>Bizagi · out/2026</span></li><li><strong>Artigo: &quot;Modelos de Controle de Acesso em Bancos de Dados na Nuvem: uma análise comparativa&quot;</strong><span>Revista EduFatec, n. 6, v. 2 · 2023</span></li><li><strong>Preparando Dados para Análise com Microsoft Power BI</strong><span>Fundação Bradesco · jan/2025</span></li><li><strong>Cultura Digital</strong><span>Fundação Bradesco · jan/2025</span></li><li><strong>Análise de Dados no Power BI</strong><span>Fundação Bradesco · nov/2024</span></li><li><strong>Introdução à Análise de Dados: Microsoft Power BI</strong><span>Fundação Bradesco · nov/2024</span></li><li><strong>Implementando Banco de Dados</strong><span>Fundação Bradesco · dez/2023</span></li></ul>
+						</div>
 				</div>
 			</div>
 		</section>
