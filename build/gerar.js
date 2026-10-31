@@ -104,10 +104,11 @@ function paginaPortfolio(t) {
 <html lang="${t.lang}">
 <head>
 	${cabecaComum(t, t.meta.titulo, t.meta.descricao, urlPagina, [['pt-BR', ''], ['en', 'en/'], ['x-default', '']])}
-	<link rel="stylesheet" href="${pre}assets/estilo.css?v=f1d64f3">
+	<link rel="stylesheet" href="${pre}assets/estilo.css?v=20261031-ux1">
 	<script type="application/ld+json">${JSON.stringify(pessoa)}</script>
 </head>
 <body>
+	<div id="progresso-leitura" aria-hidden="true"></div>
 	<a class="pular" href="#conteudo">${t.lang === 'en' ? 'Skip to content' : 'Pular para o conteúdo'}</a>
 
 	<header class="topo">
@@ -272,6 +273,36 @@ function paginaPortfolio(t) {
 		menu.addEventListener('click', function (e) {
 			if (e.target.closest('a')) { menu.classList.remove('aberto'); botao.setAttribute('aria-expanded', 'false'); }
 		});
+
+		// Barra fina de leitura, atualizada no máximo uma vez por frame
+		var progresso = document.getElementById('progresso-leitura');
+		var quadroPendente = false;
+		function atualizarProgresso() {
+			var altura = document.documentElement.scrollHeight - window.innerHeight;
+			var percentual = altura > 0 ? Math.max(0, Math.min(1, window.scrollY / altura)) : 0;
+			progresso.style.transform = 'scaleX(' + percentual + ')';
+			quadroPendente = false;
+		}
+		function agendarProgresso() {
+			if (!quadroPendente) { quadroPendente = true; window.requestAnimationFrame(atualizarProgresso); }
+		}
+		window.addEventListener('scroll', agendarProgresso, { passive: true });
+		window.addEventListener('resize', agendarProgresso);
+		atualizarProgresso();
+
+		// Revela cartões conforme entram na tela; conteúdo segue visível com movimento reduzido
+		if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			var elementos = document.querySelectorAll('.diferencial, .projeto, .habilidade, .linha-tempo > li, .lado .cartao');
+			var revelador = new IntersectionObserver(function (entradas) {
+				entradas.forEach(function (entrada) {
+					if (entrada.isIntersecting) {
+						entrada.target.classList.add('visivel');
+						revelador.unobserve(entrada.target);
+					}
+				});
+			}, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+			elementos.forEach(function (elemento) { elemento.classList.add('revelar'); revelador.observe(elemento); });
+		}
 
 		// Destaca no menu a seção que está na tela
 		if ('IntersectionObserver' in window) {

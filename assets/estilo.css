@@ -199,6 +199,21 @@ h3 { font-size: 1.15rem; }
 .estudando { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .estudando strong { color: var(--titulo); margin-right: 6px; }
 
+/* Efeitos discretos de leitura, com fallback visível sem JavaScript. */
+#progresso-leitura {
+	position: fixed; inset: 0 auto auto 0; z-index: 60; width: 100%; height: 3px;
+	background: linear-gradient(90deg, var(--rosa), var(--lilas-forte));
+	transform: scaleX(0); transform-origin: left center; pointer-events: none;
+}
+.revelar {
+	opacity: 0; transform: translateY(14px);
+	transition: opacity .5s ease, transform .5s ease;
+}
+.revelar.visivel { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+	.revelar, .revelar.visivel { opacity: 1; transform: none; transition: none; }
+}
+
 /* Trajetória */
 .trajetoria { display: grid; grid-template-columns: 1.3fr 1fr; gap: 32px; align-items: start; }
 @media (max-width: 880px) { .trajetoria { grid-template-columns: 1fr; } }
